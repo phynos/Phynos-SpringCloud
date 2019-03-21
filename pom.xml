@@ -97,6 +97,7 @@
         <module>microservice-eureka-7003</module>
         <module>microservice-service-user</module>
         <module>microservice-config-base</module>
+        <module>microservice-oauth2</module>
     </modules>
 
 </project>

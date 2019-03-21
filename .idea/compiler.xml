@@ -10,6 +10,7 @@
         <module name="microservice-eureka-7001" />
         <module name="microservice-eureka-7002" />
         <module name="microservice-eureka-7003" />
+        <module name="microservice-oauth2" />
         <module name="microservice-service-user" />
         <module name="microservice-zuul-gateway-9527" />
         <module name="Phynos-SpringCloud" />
