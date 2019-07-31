@@ -98,6 +98,10 @@
         <module>microservice-service-user</module>
         <module>microservice-config-base</module>
         <module>microservice-oauth2</module>
+        <module>microservice-provider-user-8001</module>
+        <module>microservice-provider-user-8002</module>
+        <module>microservice-provider-user-8003</module>
+        <module>microservice-consumer-user-6001</module>
     </modules>
 
 </project>
