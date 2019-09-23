@@ -6,21 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="microservice-provider-user-8001" />
-        <module name="microservice-oauth2" />
-        <module name="microservice-consumer-user-6001" />
-        <module name="Phynos-SpringCloud" />
-        <module name="microservice-config-base" />
-        <module name="microservice-service-user" />
-        <module name="microservice-eureka-7001" />
-        <module name="microservice-zuul-gateway-9527" />
+        <module name="phynos-core" />
+        <module name="phynos-zipkin" />
+        <module name="phynos-gateway" />
+        <module name="phynos-eureka" />
+        <module name="phynos-monitor" />
+        <module name="phynos-config" />
+        <module name="phynos-auth" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="microservice-eureka-7002" target="1.8" />
-      <module name="microservice-eureka-7003" target="1.8" />
-      <module name="microservice-provider-user-8002" target="1.8" />
-      <module name="microservice-provider-user-8003" target="1.8" />
+      <module name="monitor" target="1.8" />
+      <module name="parent" target="1.8" />
+      <module name="phynos-auth" target="1.8" />
+      <module name="phynos-common" target="1.8" />
+      <module name="phynos-config" target="1.8" />
+      <module name="phynos-core" target="1.8" />
+      <module name="phynos-eureka" target="1.8" />
+      <module name="phynos-gateway" target="1.8" />
+      <module name="phynos-monitor" target="1.8" />
+      <module name="phynos-web" target="1.8" />
+      <module name="phynos-zipkin" target="1.8" />
+      <module name="webapi" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

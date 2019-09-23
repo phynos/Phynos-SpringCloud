@@ -1,35 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="10e03317-ddba-4e40-a068-2e7dd601a5ff" name="Default Changelist" comment="">
+    <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-consumer-user-6001/microservice-consumer-user-6001.iml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-consumer-user-6001/microservice-consumer-user-6001.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-eureka-7002/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-eureka-7002/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-eureka-7002/src/main/java/com/phynos/cloud/EurekaServer7002_App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-eureka-7002/src/main/resources/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-eureka-7002/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-eureka-7003/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-eureka-7003/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-eureka-7003/src/main/java/com/phynos/cloud/EurekaServer7003_App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-eureka-7003/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8001/microservice-provider-user-8001.iml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice-provider-user-8001/microservice-provider-user-8001.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8002/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8002/microservice-provider-user-8002.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8002/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8002/src/main/java/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8002/src/main/resources/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8002/src/test/java/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8003/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8003/microservice-provider-user-8003.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8003/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8003/src/main/java/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8003/src/main/resources/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8003/src/test/java/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Phynos-SpringCloud.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-config-base/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-config-base/src/main/java/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-config-base/src/main/java/com/phynos/cloud/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-config-base/src/main/resources/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-consumer-user-6001/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-consumer-user-6001/microservice-consumer-user-6001.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-consumer-user-6001/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-consumer-user-6001/src/main/java/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-consumer-user-6001/src/main/resources/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-consumer-user-6001/src/test/java/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-eureka-7001/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-eureka-7001/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-eureka-7001/src/main/java/com/phynos/cloud/EurekaServer7001_App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-eureka-7001/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-oauth2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-oauth2/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-oauth2/src/main/java/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-oauth2/src/main/resources/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8001/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8001/microservice-provider-user-8001.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8001/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8001/src/main/java/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8001/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-provider-user-8001/src/test/java/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-service-user/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-service-user/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-service-user/src/main/java/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-service-user/src/main/java/com/phynos/cloud/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-service-user/src/main/resources/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-zuul-gateway-9527/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-zuul-gateway-9527/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-zuul-gateway-9527/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-zuul-gateway-9527/src/main/java/com/phynos/cloud/Zuul_9527_StartSpringCloudApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice-zuul-gateway-9527/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,54 +51,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="100" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="820" />
-  </component>
-  <component name="ProjectId" id="1R4vqt1tPK8yctykceLLdUjXJwp" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectId" id="1REtRBcDqpKnog4YWZJddU2wlS8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelOrder2" value="2" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="project.structure.side.proportion" value="0.2321839" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\workspace-java\Phynos-SpringCloud\microservice-consumer-user-6001\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.phynos.cloud" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workspace-java\Phynos-SpringCloud\microservice-provider-user-8001\src\main\resources" />
-      <recent name="D:\workspace-java\Phynos-SpringCloud\microservice-consumer-user-6001\src\main\resources" />
-      <recent name="D:\workspace-java\Phynos-SpringCloud\microservice-service-user\src\main\java\com\phynos\cloud" />
-      <recent name="D:\workspace-java\Phynos-SpringCloud\microservice-config-base\src\main\java\com\phynos\cloud" />
-      <recent name="D:\workspace-java\Phynos-SpringCloud\microservice-eureka-7003\src\main\resources" />
+      <recent name="D:\JavaSpace\Phynos-SpringBoot\src\phynos-gateway\src\test\java" />
+      <recent name="D:\JavaSpace\Phynos-SpringBoot\src\phynos-gateway\src\main\resources" />
+      <recent name="D:\JavaSpace\Phynos-SpringBoot\src\phynos-gateway\src\main\java" />
+      <recent name="D:\JavaSpace\Phynos-SpringBoot\src\phynos-web\phynos-monitor\src\main\resources" />
+      <recent name="D:\JavaSpace\Phynos-SpringBoot\src\phynos-web\phynos-monitor\src\main\java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -100,50 +88,25 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Zuul_9527_StartSpringCloudApp" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="microservice-zuul-gateway-9527" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.cloud.Zuul_9527_StartSpringCloudApp" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+    <configuration name="WebApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="webapi" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.springboot.webapi.WebApiApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="microservice-zuul-gateway-9527" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.cloud.Zuul_9527_StartSpringCloudApp" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
-  <component name="SvnConfiguration">
-    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="10e03317-ddba-4e40-a068-2e7dd601a5ff" name="Default Changelist" comment="" />
-      <created>1555411885190</created>
+      <changelist id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="" />
+      <created>1569244072621</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1555411885190</updated>
-      <workItem from="1555411887062" duration="1012000" />
-      <workItem from="1557833008436" duration="121000" />
-      <workItem from="1564449222839" duration="3551000" />
-      <workItem from="1564536672641" duration="2407000" />
-      <workItem from="1564571808848" duration="1071000" />
-      <workItem from="1568939378691" duration="233000" />
+      <updated>1569244072621</updated>
+      <workItem from="1569244080392" duration="1362000" />
+      <workItem from="1569245963098" duration="108000" />
     </task>
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -153,7 +116,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

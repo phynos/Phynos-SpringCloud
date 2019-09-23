@@ -2,16 +2,16 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-config-base" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-consumer-user-6001" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-eureka-7001" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-eureka-7002" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-eureka-7003" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-oauth2" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-provider-user-8001" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-provider-user-8002" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-provider-user-8003" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-service-user" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/microservice-zuul-gateway-9527" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-common/phynos-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-web/phynos-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-web/phynos-zipkin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/webapi" charset="UTF-8" />
   </component>
 </project>
