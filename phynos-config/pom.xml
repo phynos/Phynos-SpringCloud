@@ -12,4 +12,11 @@
     <artifactId>phynos-config</artifactId>
 
 
+    <dependencies>
+        <!--配置中心-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
+        </dependency>
+    </dependencies>
 </project>

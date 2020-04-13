@@ -6,7 +6,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="phynos-core" />
         <module name="phynos-zipkin" />
         <module name="phynos-gateway" />
         <module name="phynos-eureka" />
@@ -25,6 +24,7 @@
       <module name="phynos-eureka" target="1.8" />
       <module name="phynos-gateway" target="1.8" />
       <module name="phynos-monitor" target="1.8" />
+      <module name="Phynos-SpringCloud" target="1.8" />
       <module name="phynos-web" target="1.8" />
       <module name="phynos-zipkin" target="1.8" />
       <module name="webapi" target="1.8" />

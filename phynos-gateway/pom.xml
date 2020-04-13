@@ -11,5 +11,12 @@
 
     <artifactId>phynos-gateway</artifactId>
 
+    <dependencies>
+        <!--gateway 网关依赖,内置webflux 依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
 
+    </dependencies>
 </project>
