@@ -13,19 +13,18 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <druid>1.0.31</druid>
         <spring-boot.version>2.1.8.RELEASE</spring-boot.version>
         <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
+        <zipkin.version>2.10.1</zipkin.version>
     </properties>
 
     <modules>
-
-        <module>phynos-common</module>
         <module>phynos-config</module>
         <module>phynos-gateway</module>
         <module>phynos-eureka</module>
+        <module>phynos-zipkin</module>
+        <module>phynos-monitor</module>
         <module>phynos-auth</module>
-        <module>phynos-web</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -47,6 +46,21 @@
                 <scope>import</scope>
             </dependency>
 
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-server</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.zipkin.java</groupId>
+                <artifactId>zipkin-autoconfigure-ui</artifactId>
+                <version>${zipkin.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

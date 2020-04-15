@@ -14,8 +14,11 @@
     <file url="file://$PROJECT_DIR$/phynos-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-gateway/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/phynos-web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/phynos-web/phynos-monitor" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/phynos-web/phynos-zipkin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-monitor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-monitor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-zipkin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-zipkin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-zipkin/src/main/resources" charset="UTF-8" />
   </component>
 </project>
