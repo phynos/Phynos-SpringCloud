@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/phynos-server-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phynos-server-pruduct/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-server-pruduct/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-pruduct/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +93,7 @@
       <workItem from="1586746960066" duration="1966000" />
       <workItem from="1586953923663" duration="2468000" />
       <workItem from="1586956407217" duration="1260000" />
-      <workItem from="1586998807885" duration="404000" />
+      <workItem from="1586998807885" duration="479000" />
     </task>
     <servers />
   </component>

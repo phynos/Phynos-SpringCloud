@@ -12,7 +12,7 @@
     <artifactId>phynos-server-pruduct</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>phynos-product</module>
+
     </modules>
 
 </project>

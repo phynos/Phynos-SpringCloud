@@ -25,11 +25,8 @@
         <module>phynos-zipkin</module>
         <module>phynos-monitor</module>
         <module>phynos-auth</module>
-        <module>phynos-provide</module>
-        <module>phynos-service-provide</module>
         <module>phynos-server-consumer</module>
         <module>phynos-server-pruduct</module>
-        <module>phynos-user</module>
     </modules>
     <packaging>pom</packaging>
 
