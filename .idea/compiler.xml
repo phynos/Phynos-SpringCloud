@@ -24,6 +24,8 @@
       <module name="phynos-eureka" target="1.8" />
       <module name="phynos-gateway" target="1.8" />
       <module name="phynos-monitor" target="1.8" />
+      <module name="phynos-server-consumer" target="1.8" />
+      <module name="phynos-server-pruduct" target="1.8" />
       <module name="Phynos-SpringCloud" target="1.8" />
       <module name="phynos-web" target="1.8" />
       <module name="phynos-zipkin" target="1.8" />

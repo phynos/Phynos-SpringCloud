@@ -14,6 +14,10 @@
         <option value="$PROJECT_DIR$/monitor/pom.xml" />
         <option value="$PROJECT_DIR$/phynos-common/phynos-core/pom.xml" />
         <option value="$PROJECT_DIR$/phynos-common/pom.xml" />
+        <option value="$PROJECT_DIR$/phynos-provide/pom.xml" />
+        <option value="$PROJECT_DIR$/phynos-server-pruduct/phynos-product/pom.xml" />
+        <option value="$PROJECT_DIR$/phynos-service-provide/pom.xml" />
+        <option value="$PROJECT_DIR$/phynos-user/pom.xml" />
         <option value="$PROJECT_DIR$/phynos-web/pom.xml" />
         <option value="$PROJECT_DIR$/webapi/pom.xml" />
       </set>
