@@ -1,8 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/phynos-dependencies/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phynos-dependencies/phynos-dependencies-bom/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phynos-dependencies/phynos-dependencies-bom/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phynos-dependencies/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phynos-zuul/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phynos-zuul/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phynos-zuul/src/main/java/com/phynos/cloud/zuul/ZuulApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phynos-zuul/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,13 +48,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../tools/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1REtRBcDqpKnog4YWZJddU2wlS8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -33,25 +68,26 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/phynos-dependencies/phynos-dependencies-bom" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2321839" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\workspace-java\Phynos-SpringCloud" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\workspace\Phynos-SpringCloud\phynos-dependencies\phynos-dependencies-bom" />
+      <recent name="D:\workspace\Phynos-SpringCloud\phynos-dependencies" />
+      <recent name="D:\workspace\Phynos-SpringCloud\phynos-zuul" />
       <recent name="D:\JavaSpace\Phynos-SpringBoot\src\phynos-gateway\src\test\java" />
       <recent name="D:\JavaSpace\Phynos-SpringBoot\src\phynos-gateway\src\main\resources" />
-      <recent name="D:\JavaSpace\Phynos-SpringBoot\src\phynos-gateway\src\main\java" />
-      <recent name="D:\JavaSpace\Phynos-SpringBoot\src\phynos-web\phynos-monitor\src\main\resources" />
-      <recent name="D:\JavaSpace\Phynos-SpringBoot\src\phynos-web\phynos-monitor\src\main\java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\workspace-java\Phynos-SpringCloud" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.EurekaApplication">
@@ -93,24 +129,25 @@
       <workItem from="1586956407217" duration="1260000" />
       <workItem from="1586998807885" duration="1127000" />
       <workItem from="1587112176015" duration="724000" />
+      <workItem from="1591277079244" duration="1916000" />
+      <workItem from="1591280117246" duration="1725000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586954184951">
@@ -153,13 +190,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1876" height="277" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396469" />
-    <state x="440" y="93" key="SettingsEditor" timestamp="1586999204916">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="349" y="260" key="SettingsEditor" timestamp="1591281298791">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="440" y="93" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586999204916" />
-    <state x="330" y="213" key="new project wizard" timestamp="1586999188841">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="349" y="260" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1591281298791" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1591281833500">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591281833500" />
+    <state x="440" y="287" key="new project wizard" timestamp="1591281448705">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="330" y="213" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1586999188841" />
+    <state x="440" y="287" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1591281448705" />
   </component>
 </project>

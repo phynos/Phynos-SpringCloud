@@ -27,6 +27,8 @@
         <module>phynos-auth</module>
         <module>phynos-server-consumer</module>
         <module>phynos-server-pruduct</module>
+        <module>phynos-zuul</module>
+        <module>phynos-dependencies</module>
     </modules>
     <packaging>pom</packaging>
 

@@ -10,7 +10,9 @@
         <module name="phynos-gateway" />
         <module name="phynos-eureka" />
         <module name="phynos-monitor" />
+        <module name="phynos-zuul" />
         <module name="phynos-config" />
+        <module name="phynos-dependencies-bom" />
         <module name="phynos-auth" />
       </profile>
     </annotationProcessing>
@@ -21,6 +23,8 @@
       <module name="phynos-common" target="1.8" />
       <module name="phynos-config" target="1.8" />
       <module name="phynos-core" target="1.8" />
+      <module name="phynos-dependencies" target="1.8" />
+      <module name="phynos-dependencies-bom" target="1.8" />
       <module name="phynos-eureka" target="1.8" />
       <module name="phynos-gateway" target="1.8" />
       <module name="phynos-monitor" target="1.8" />
@@ -29,6 +33,7 @@
       <module name="Phynos-SpringCloud" target="1.8" />
       <module name="phynos-web" target="1.8" />
       <module name="phynos-zipkin" target="1.8" />
+      <module name="phynos-zuul" target="1.8" />
       <module name="webapi" target="1.8" />
     </bytecodeTargetLevel>
   </component>
