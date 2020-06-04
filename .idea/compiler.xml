@@ -10,7 +10,6 @@
         <module name="phynos-gateway" />
         <module name="phynos-eureka" />
         <module name="phynos-monitor" />
-        <module name="phynos-zuul" />
         <module name="phynos-config" />
         <module name="phynos-dependencies-bom" />
         <module name="phynos-auth" />
