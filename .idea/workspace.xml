@@ -20,14 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="1212">
+      <change afterPath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/java/com/phynos/cloud/consumer/user/ConsumerUserApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-zuul/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-zuul/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-zuul/src/main/java/com/phynos/cloud/zuul/ZuulApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-zuul/src/main/resources/application.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-server-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-consumer/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$PROJECT_DIR$/../../tools/apache-maven-3.6.3" />
+        <option name="mavenHome" value="F:/tools/apache-maven-3.6.3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -69,7 +68,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/phynos-dependencies/phynos-dependencies-bom" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2321839" />
@@ -128,6 +127,7 @@
       <workItem from="1587112176015" duration="724000" />
       <workItem from="1591277079244" duration="1916000" />
       <workItem from="1591280117246" duration="2261000" />
+      <workItem from="1591600981881" duration="6520000" />
     </task>
     <task id="LOCAL-00001" summary="1212">
       <created>1591281885948</created>
@@ -140,19 +140,20 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1212" />
@@ -208,10 +209,15 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1591281897794" />
-    <state x="440" y="287" key="new project wizard" timestamp="1591281448705">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="381" y="221" key="new project wizard" timestamp="1591601900036">
+      <screen x="62" y="0" width="1858" height="1080" />
     </state>
     <state x="330" y="213" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1586999188841" />
     <state x="440" y="287" key="new project wizard/0.0.2560.1400@0.0.2560.1400" timestamp="1591281448705" />
+    <state x="381" y="221" key="new project wizard/62.0.1858.1080@62.0.1858.1080" timestamp="1591601900036" />
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1591601997640">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="654" y="235" width="672" height="678" key="search.everywhere.popup/62.0.1858.1080@62.0.1858.1080" timestamp="1591601997640" />
   </component>
 </project>

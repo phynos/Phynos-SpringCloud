@@ -11,6 +11,9 @@
 
     <artifactId>phynos-server-consumer</artifactId>
     <packaging>pom</packaging>
+    <modules>
+        <module>phynos-consumer-user</module>
+    </modules>
 
 
 </project>

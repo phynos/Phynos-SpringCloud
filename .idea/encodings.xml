@@ -8,8 +8,6 @@
     <file url="file://$PROJECT_DIR$/phynos-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-config/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-config/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/phynos-dependencies/phynos-dependencies-bom/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/phynos-dependencies/phynos-dependencies-bom/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-eureka" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-eureka/src/main/resources" charset="UTF-8" />
@@ -19,10 +17,10 @@
     <file url="file://$PROJECT_DIR$/phynos-monitor" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-monitor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-monitor/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-zipkin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-zipkin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-zipkin/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/phynos-zuul/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/phynos-zuul/src/main/resources" charset="UTF-8" />
   </component>
 </project>

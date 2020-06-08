@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="phynos-consumer-user" />
         <module name="phynos-zipkin" />
         <module name="phynos-gateway" />
         <module name="phynos-eureka" />
         <module name="phynos-monitor" />
         <module name="phynos-config" />
-        <module name="phynos-dependencies-bom" />
         <module name="phynos-auth" />
       </profile>
     </annotationProcessing>
@@ -21,6 +21,7 @@
       <module name="phynos-auth" target="1.8" />
       <module name="phynos-common" target="1.8" />
       <module name="phynos-config" target="1.8" />
+      <module name="phynos-consumer-user" target="1.8" />
       <module name="phynos-core" target="1.8" />
       <module name="phynos-dependencies" target="1.8" />
       <module name="phynos-dependencies-bom" target="1.8" />
