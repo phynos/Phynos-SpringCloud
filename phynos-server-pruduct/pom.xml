@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
 
+        <module>phynos-product-user</module>
     </modules>
 
 </project>

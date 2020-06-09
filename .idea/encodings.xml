@@ -19,6 +19,8 @@
     <file url="file://$PROJECT_DIR$/phynos-monitor/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-zipkin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-zipkin/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/phynos-zipkin/src/main/resources" charset="UTF-8" />

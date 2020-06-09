@@ -1,13 +1,13 @@
 package com.phynos.cloud.gateway;
 
 import org.springframework.boot.SpringApplication;
-import org.springframework.cloud.client.SpringCloudApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author by lupc
  * @date 2020-04-13 11:14
  */
-@SpringCloudApplication
+@SpringBootApplication
 public class GatewayApplication {
 
     public static void main(String[] args) {

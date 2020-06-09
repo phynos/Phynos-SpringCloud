@@ -32,7 +32,7 @@ Java微服务
 - postman测试用例
 - 脚本测试
 
-### 构建和Docker
+### 构建、Docker和K8S
 
 ### 云部署
 
