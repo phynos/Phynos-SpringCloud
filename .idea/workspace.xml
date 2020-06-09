@@ -19,17 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="1212">
-      <change afterPath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/java/com/phynos/cloud/product/user/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-config/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-eureka/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-monitor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-monitor/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/java/com/phynos/cloud/product/user/ProductUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/java/com/phynos/cloud/product/user/ProductUserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-zipkin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-zipkin/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="1212" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -181,7 +171,7 @@
       <workItem from="1591277079244" duration="1916000" />
       <workItem from="1591280117246" duration="2261000" />
       <workItem from="1591600981881" duration="6520000" />
-      <workItem from="1591662690874" duration="5635000" />
+      <workItem from="1591662690874" duration="6203000" />
     </task>
     <task id="LOCAL-00001" summary="1212">
       <created>1591281885948</created>
