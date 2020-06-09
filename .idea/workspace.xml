@@ -20,24 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="1212">
-      <change afterPath="$PROJECT_DIR$/phynos-gateway/src/main/java/com/phynos/cloud/gateway/RoutesConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/java/com/phynos/cloud/consumer/user/controller/ConsumerUserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/java/com/phynos/cloud/consumer/user/remote/HelloRemote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/java/com/phynos/cloud/product/user/ProductUserApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/java/com/phynos/cloud/product/user/controller/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-gateway/src/main/java/com/phynos/cloud/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-gateway/src/main/java/com/phynos/cloud/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-gateway/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/java/com/phynos/cloud/consumer/user/ConsumerUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/java/com/phynos/cloud/consumer/user/ConsumerUserApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-server-pruduct/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-pruduct/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-config/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-eureka/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-eureka/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-monitor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-monitor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/java/com/phynos/cloud/product/user/ProductUserApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/java/com/phynos/cloud/product/user/ProductUserApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-zipkin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-zipkin/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +89,14 @@
       <recent name="D:\JavaSpace\Phynos-SpringBoot\src\phynos-gateway\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Consumer-User">
+  <component name="RunManager" selected="Spring Boot.Product-User">
+    <configuration name="CloudConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="phynos-config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.cloud.config.CloudConfigApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Consumer-User" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="phynos-consumer-user" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.cloud.consumer.user.ConsumerUserApplication" />
@@ -122,6 +120,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Product-User" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="phynos-product-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.cloud.product.user.ProductUserApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductUserApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="phynos-product-user" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.cloud.product.user.ProductUserApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="webapi" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.springboot.webapi.WebApiApplication" />
@@ -129,11 +142,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ZipkinApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="phynos-zipkin" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.cloud.zipkin.ZipkinApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
+      <item itemvalue="Spring Boot.Product-User" />
       <item itemvalue="Spring Boot.WebApiApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.Consumer-User" />
       <item itemvalue="Spring Boot.GatewayApplication" />
+      <item itemvalue="Spring Boot.ProductUserApplication" />
+      <item itemvalue="Spring Boot.CloudConfigApplication" />
+      <item itemvalue="Spring Boot.ZipkinApplication" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -157,7 +181,7 @@
       <workItem from="1591277079244" duration="1916000" />
       <workItem from="1591280117246" duration="2261000" />
       <workItem from="1591600981881" duration="6520000" />
-      <workItem from="1591662690874" duration="2768000" />
+      <workItem from="1591662690874" duration="5635000" />
     </task>
     <task id="LOCAL-00001" summary="1212">
       <created>1591281885948</created>
@@ -190,55 +214,55 @@
     <option name="LAST_COMMIT_MESSAGE" value="1212" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="401" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591674447237">
+    <state x="401" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591682978863">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="401" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1591674447237" />
+    <state x="401" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1591682978863" />
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586954184951" />
-    <state x="667" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1591673371471">
+    <state x="667" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1591682977010">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="667" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1591673371471" />
+    <state x="667" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1591682977010" />
     <state x="689" y="301" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586954176163" />
-    <state width="1814" height="290" key="GridCell.Tab.0.bottom" timestamp="1591675000556">
+    <state width="1814" height="290" key="GridCell.Tab.0.bottom" timestamp="1591683009570">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="290" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1591675000556" />
+    <state width="1814" height="290" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1591683009570" />
     <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396468" />
-    <state width="1814" height="290" key="GridCell.Tab.0.center" timestamp="1591675000556">
+    <state width="1814" height="290" key="GridCell.Tab.0.center" timestamp="1591683009570">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="290" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1591675000556" />
+    <state width="1814" height="290" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1591683009570" />
     <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396468" />
-    <state width="1814" height="290" key="GridCell.Tab.0.left" timestamp="1591675000556">
+    <state width="1814" height="290" key="GridCell.Tab.0.left" timestamp="1591683009569">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="290" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1591675000556" />
+    <state width="1814" height="290" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1591683009569" />
     <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396468" />
-    <state width="1814" height="290" key="GridCell.Tab.0.right" timestamp="1591675000556">
+    <state width="1814" height="290" key="GridCell.Tab.0.right" timestamp="1591683009570">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="290" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1591675000556" />
+    <state width="1814" height="290" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1591683009570" />
     <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396468" />
-    <state width="1814" height="290" key="GridCell.Tab.1.bottom" timestamp="1591675000557">
+    <state width="1814" height="290" key="GridCell.Tab.1.bottom" timestamp="1591683009570">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="290" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1591675000557" />
+    <state width="1814" height="290" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1591683009570" />
     <state width="1876" height="277" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396469" />
-    <state width="1814" height="290" key="GridCell.Tab.1.center" timestamp="1591675000556">
+    <state width="1814" height="290" key="GridCell.Tab.1.center" timestamp="1591683009570">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="290" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1591675000556" />
+    <state width="1814" height="290" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1591683009570" />
     <state width="1876" height="277" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396469" />
-    <state width="1814" height="290" key="GridCell.Tab.1.left" timestamp="1591675000556">
+    <state width="1814" height="290" key="GridCell.Tab.1.left" timestamp="1591683009570">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="290" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1591675000556" />
+    <state width="1814" height="290" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1591683009570" />
     <state width="1876" height="277" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396468" />
-    <state width="1814" height="290" key="GridCell.Tab.1.right" timestamp="1591675000557">
+    <state width="1814" height="290" key="GridCell.Tab.1.right" timestamp="1591683009570">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="290" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1591675000557" />
+    <state width="1814" height="290" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1591683009570" />
     <state width="1876" height="277" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396469" />
     <state x="349" y="260" key="SettingsEditor" timestamp="1591282374564">
       <screen x="0" y="0" width="2560" height="1400" />
