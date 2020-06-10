@@ -1,5 +1,5 @@
-# Phynos-SpringCloud（我的微服务总结）
-Java微服务
+# Phynos-SpringCloud
+微服务
 
 ## 基础内容
 ### 配置管理
