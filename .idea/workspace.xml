@@ -20,14 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="1212">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-zipkin/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-sleuth-zipkin/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-zipkin/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-sleuth-zipkin/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-zipkin/src/main/java/com/phynos/cloud/zipkin/ZipkinApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-sleuth-zipkin/src/main/java/com/phynos/cloud/zipkin/ZipkinApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-zipkin/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-sleuth-zipkin/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-monitor/src/main/java/com/phynos/cloud/monitor/MonitorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-monitor/src/main/java/com/phynos/cloud/monitor/MonitorApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-monitor/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-monitor/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +178,7 @@
       <workItem from="1591662690874" duration="7003000" />
       <workItem from="1591753521363" duration="6040000" />
       <workItem from="1592798006356" duration="96000" />
-      <workItem from="1592798123786" duration="83000" />
+      <workItem from="1592798123786" duration="300000" />
     </task>
     <task id="LOCAL-00001" summary="1212">
       <created>1591281885948</created>
