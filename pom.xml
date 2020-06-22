@@ -22,7 +22,7 @@
         <module>phynos-config</module>
         <module>phynos-gateway</module>
         <module>phynos-eureka</module>
-        <module>phynos-zipkin</module>
+        <module>phynos-sleuth-zipkin</module>
         <module>phynos-monitor</module>
         <module>phynos-auth</module>
         <module>phynos-server-consumer</module>
