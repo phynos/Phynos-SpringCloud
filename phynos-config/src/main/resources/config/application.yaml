@@ -1,7 +1,9 @@
 server:
-  port: 8888
+  port: 6999
 
 spring:
+  application:
+    name: phynos-cloud-config
   profiles:
     active: native
   cloud:

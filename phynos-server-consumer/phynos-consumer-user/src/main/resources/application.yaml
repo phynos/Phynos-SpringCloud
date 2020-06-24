@@ -4,6 +4,9 @@ server:
 spring:
   application:
     name: spring-cloud-consumer-user
+  cloud:
+    config:
+      uri: http://localhost:6999 #配置中心地址
 
 # 在feign中开启熔断器
 feign:
