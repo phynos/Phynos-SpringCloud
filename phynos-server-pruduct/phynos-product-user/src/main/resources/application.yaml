@@ -3,7 +3,7 @@ spring:
     name: spring-cloud-product-user
 
 server:
-  port: 6101
+  port: 6801
 
 eureka:
   client:

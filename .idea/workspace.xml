@@ -21,9 +21,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="1212">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-config/src/main/resources/config/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-config/src/main/resources/config/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-monitor/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-monitor/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-pruduct/phynos-product-user/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-sleuth-zipkin/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-sleuth-zipkin/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +184,7 @@
       <workItem from="1592798123786" duration="333000" />
       <workItem from="1592873738329" duration="749000" />
       <workItem from="1592968954500" duration="3351000" />
+      <workItem from="1593756588041" duration="730000" />
     </task>
     <task id="LOCAL-00001" summary="1212">
       <created>1591281885948</created>

@@ -3,7 +3,7 @@ spring:
     name: spring-cloud-zipkin-service
 
 server:
-  port: 6900
+  port: 6200
 
 eureka:
   client:

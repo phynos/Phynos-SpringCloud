@@ -1,12 +1,12 @@
 server:
-  port: 6001
+  port: 6901
 
 spring:
   application:
     name: spring-cloud-consumer-user
   cloud:
     config:
-      uri: http://localhost:6999 #配置中心地址
+      uri: http://localhost:6300 #配置中心地址
 
 # 在feign中开启熔断器
 feign:

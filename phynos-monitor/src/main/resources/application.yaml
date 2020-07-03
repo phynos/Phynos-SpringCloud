@@ -8,7 +8,7 @@ spring:
         title: '微服务后台监控'
 
 server:
-  port: 6666
+  port: 6000
   servlet:
     context-path: /app-monitor
 
