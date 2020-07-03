@@ -6,7 +6,11 @@ spring:
     name: spring-cloud-consumer-user
   cloud:
     config:
-      uri: http://localhost:6300 #配置中心地址
+      discovery:
+        enabled: true
+        service-id: phynos-cloud-config
+      name: afdf # 配置文件名称
+      profile: dev # 后缀
 
 # 在feign中开启熔断器
 feign:

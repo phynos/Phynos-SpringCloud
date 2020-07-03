@@ -12,3 +12,9 @@ spring:
         native:
           search-locations: file:///user/config/abc
 
+# 配置集群eureka注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
