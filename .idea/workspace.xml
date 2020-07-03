@@ -21,11 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="1212">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-config/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-config/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phynos-config/src/main/java/com/phynos/cloud/config/CloudConfigApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-config/src/main/java/com/phynos/cloud/config/CloudConfigApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-config/src/main/resources/config/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-config/src/main/resources/config/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-server-consumer/phynos-consumer-user/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-gateway/src/main/java/com/phynos/cloud/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-gateway/src/main/java/com/phynos/cloud/gateway/GatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-gateway/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-gateway/src/main/resources/application.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phynos-sleuth-zipkin/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-sleuth-zipkin/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,10 +86,18 @@
       <recent name="D:\JavaSpace\Phynos-SpringBoot\src\phynos-gateway\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Product-User">
+  <component name="RunManager" selected="Spring Boot.ZipkinApplication">
     <configuration name="CloudConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="phynos-config" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.cloud.config.CloudConfigApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Config-Server" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="phynos-config" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.springframework.cloud.config.server.ConfigServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,13 +140,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="webapi" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.springboot.webapi.WebApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ZipkinApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="phynos-sleuth-zipkin" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.cloud.zipkin.ZipkinApplication" />
@@ -149,13 +149,13 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.Product-User" />
-      <item itemvalue="Spring Boot.WebApiApplication" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.Consumer-User" />
       <item itemvalue="Spring Boot.GatewayApplication" />
       <item itemvalue="Spring Boot.ProductUserApplication" />
       <item itemvalue="Spring Boot.CloudConfigApplication" />
       <item itemvalue="Spring Boot.ZipkinApplication" />
+      <item itemvalue="Spring Boot.Config-Server" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -185,7 +185,7 @@
       <workItem from="1592798123786" duration="333000" />
       <workItem from="1592873738329" duration="749000" />
       <workItem from="1592968954500" duration="3351000" />
-      <workItem from="1593756588041" duration="2715000" />
+      <workItem from="1593756588041" duration="4005000" />
     </task>
     <task id="LOCAL-00001" summary="1212">
       <created>1591281885948</created>
@@ -218,55 +218,55 @@
     <option name="LAST_COMMIT_MESSAGE" value="1212" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="401" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591682978863">
+    <state x="401" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593760289754">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="401" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1591682978863" />
+    <state x="401" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1593760289754" />
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586954184951" />
-    <state x="667" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1591682977010">
+    <state x="667" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1593760286407">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="667" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1591682977010" />
+    <state x="667" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1593760286407" />
     <state x="689" y="301" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586954176163" />
-    <state width="1814" height="522" key="GridCell.Tab.0.bottom" timestamp="1591759568494">
+    <state width="1814" height="522" key="GridCell.Tab.0.bottom" timestamp="1593760550977">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="522" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1591759568494" />
+    <state width="1814" height="522" key="GridCell.Tab.0.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1593760550977" />
     <state width="1876" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396468" />
-    <state width="1814" height="522" key="GridCell.Tab.0.center" timestamp="1591759568494">
+    <state width="1814" height="522" key="GridCell.Tab.0.center" timestamp="1593760550976">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="522" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1591759568494" />
+    <state width="1814" height="522" key="GridCell.Tab.0.center/0.0.1858.1080@0.0.1858.1080" timestamp="1593760550976" />
     <state width="1876" height="277" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396468" />
-    <state width="1814" height="522" key="GridCell.Tab.0.left" timestamp="1591759568493">
+    <state width="1814" height="522" key="GridCell.Tab.0.left" timestamp="1593760550976">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="522" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1591759568493" />
+    <state width="1814" height="522" key="GridCell.Tab.0.left/0.0.1858.1080@0.0.1858.1080" timestamp="1593760550976" />
     <state width="1876" height="277" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396468" />
-    <state width="1814" height="522" key="GridCell.Tab.0.right" timestamp="1591759568494">
+    <state width="1814" height="522" key="GridCell.Tab.0.right" timestamp="1593760550976">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="522" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1591759568494" />
+    <state width="1814" height="522" key="GridCell.Tab.0.right/0.0.1858.1080@0.0.1858.1080" timestamp="1593760550976" />
     <state width="1876" height="277" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396468" />
-    <state width="1814" height="522" key="GridCell.Tab.1.bottom" timestamp="1591759568495">
+    <state width="1814" height="522" key="GridCell.Tab.1.bottom" timestamp="1593760550978">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="522" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1591759568495" />
+    <state width="1814" height="522" key="GridCell.Tab.1.bottom/0.0.1858.1080@0.0.1858.1080" timestamp="1593760550978" />
     <state width="1876" height="277" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396469" />
-    <state width="1814" height="522" key="GridCell.Tab.1.center" timestamp="1591759568494">
+    <state width="1814" height="522" key="GridCell.Tab.1.center" timestamp="1593760550977">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="522" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1591759568494" />
+    <state width="1814" height="522" key="GridCell.Tab.1.center/0.0.1858.1080@0.0.1858.1080" timestamp="1593760550977" />
     <state width="1876" height="277" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396469" />
-    <state width="1814" height="522" key="GridCell.Tab.1.left" timestamp="1591759568494">
+    <state width="1814" height="522" key="GridCell.Tab.1.left" timestamp="1593760550977">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="522" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1591759568494" />
+    <state width="1814" height="522" key="GridCell.Tab.1.left/0.0.1858.1080@0.0.1858.1080" timestamp="1593760550977" />
     <state width="1876" height="277" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396468" />
-    <state width="1814" height="522" key="GridCell.Tab.1.right" timestamp="1591759568495">
+    <state width="1814" height="522" key="GridCell.Tab.1.right" timestamp="1593760550977">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state width="1814" height="522" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1591759568495" />
+    <state width="1814" height="522" key="GridCell.Tab.1.right/0.0.1858.1080@0.0.1858.1080" timestamp="1593760550977" />
     <state width="1876" height="277" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586956396469" />
     <state x="253" y="201" key="SettingsEditor" timestamp="1591756797496">
       <screen x="0" y="0" width="1858" height="1080" />

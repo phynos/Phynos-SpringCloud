@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-cloud-zipkin-service
+    name: phynos-cloud-zipkin-service
 
 server:
   port: 6200

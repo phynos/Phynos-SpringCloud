@@ -1,6 +1,11 @@
+
+
 server:
   port: 6100
+
 spring:
+  application:
+    name: phynos-cloud-gateway
   cloud:
     gateway:
       routes:
@@ -8,3 +13,9 @@ spring:
           uri: http://www.ityouknow.com
           predicates:
             - Path=/spring-cloud
+
+# 配置集群eureka注册中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
