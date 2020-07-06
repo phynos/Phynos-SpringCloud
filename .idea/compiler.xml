@@ -9,11 +9,11 @@
         <module name="phynos-consumer-user" />
         <module name="phynos-gateway" />
         <module name="phynos-eureka" />
-        <module name="phynos-sleuth-zipkin" />
+        <module name="phynos-auth" />
         <module name="phynos-monitor" />
         <module name="phynos-product-user" />
         <module name="phynos-config" />
-        <module name="phynos-auth" />
+        <module name="phynos-sleuth-zipkin" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

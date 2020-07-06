@@ -20,7 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="1212">
+      <change afterPath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/OAuth2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-auth/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-auth/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,6 +187,7 @@
       <workItem from="1592873738329" duration="749000" />
       <workItem from="1592968954500" duration="3351000" />
       <workItem from="1593756588041" duration="4549000" />
+      <workItem from="1594026727371" duration="4186000" />
     </task>
     <task id="LOCAL-00001" summary="1212">
       <created>1591281885948</created>

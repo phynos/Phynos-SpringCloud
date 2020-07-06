@@ -1,0 +1,13 @@
+server:
+  port: 6400
+
+spring:
+  application:
+    name: spring-cloud-auth2
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: phynos-cloud-config
+      name: afdf # 配置文件名称
+      profile: dev # 后缀
