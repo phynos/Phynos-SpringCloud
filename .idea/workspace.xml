@@ -19,13 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="1212">
-      <change afterPath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/config/AuthorizationServerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/OAuth2Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/OAuth2Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/OAuth2Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/config/WebSecurityConfig.java" afterDir="false" />
-    </list>
+    <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="1212" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -196,7 +190,7 @@
       <workItem from="1592968954500" duration="3351000" />
       <workItem from="1593756588041" duration="4549000" />
       <workItem from="1594026727371" duration="4186000" />
-      <workItem from="1594087118715" duration="3925000" />
+      <workItem from="1594087118715" duration="4216000" />
     </task>
     <task id="LOCAL-00001" summary="1212">
       <created>1591281885948</created>
@@ -229,6 +223,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="1212" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="521" y="197" key="#Project_Structure" timestamp="1594092267652">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="521" y="197" key="#Project_Structure/0.0.1858.1080@0.0.1858.1080" timestamp="1594092267652" />
     <state x="401" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594087317208">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
