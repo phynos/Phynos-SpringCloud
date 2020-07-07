@@ -20,12 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0554e5c0-3fe3-442e-9513-ec70d985128f" name="Default Changelist" comment="1212">
-      <change afterPath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/OAuth2Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phynos-auth/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-auth/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/AuthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/OAuth2Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/OAuth2Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/OAuth2Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-auth/src/main/java/com/phynos/cloud/auth/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/phynos-auth/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/phynos-auth/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,10 +86,11 @@
       <recent name="D:\JavaSpace\Phynos-SpringBoot\src\phynos-gateway\src\test\java" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ZipkinApplication">
+  <component name="RunManager" selected="Spring Boot.OAuth2Application">
     <configuration name="CloudConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="phynos-config" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.cloud.config.CloudConfigApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.springframework.cloud.config.server.ConfigServerApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,6 +126,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OAuth2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="phynos-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.cloud.auth.OAuth2Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Product-User" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="phynos-product-user" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.phynos.cloud.product.user.ProductUserApplication" />
@@ -149,6 +157,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Spring Boot.OAuth2Application" />
       <item itemvalue="Spring Boot.Product-User" />
       <item itemvalue="Spring Boot.EurekaApplication" />
       <item itemvalue="Spring Boot.Consumer-User" />
@@ -188,6 +197,7 @@
       <workItem from="1592968954500" duration="3351000" />
       <workItem from="1593756588041" duration="4549000" />
       <workItem from="1594026727371" duration="4186000" />
+      <workItem from="1594087118715" duration="3258000" />
     </task>
     <task id="LOCAL-00001" summary="1212">
       <created>1591281885948</created>
@@ -220,15 +230,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="1212" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="401" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593760289754">
+    <state x="401" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594087317208">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="401" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1593760289754" />
+    <state x="401" y="181" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1594087317208" />
     <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586954184951" />
-    <state x="667" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1593760286407">
+    <state x="667" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1594087314601">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="667" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1593760286407" />
+    <state x="667" y="313" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1858.1080@0.0.1858.1080" timestamp="1594087314601" />
     <state x="689" y="301" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586954176163" />
     <state width="1814" height="522" key="GridCell.Tab.0.bottom" timestamp="1593761173780">
       <screen x="0" y="0" width="1858" height="1080" />

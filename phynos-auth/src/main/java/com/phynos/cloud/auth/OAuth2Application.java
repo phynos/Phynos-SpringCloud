@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @EnableResourceServer
 @EnableAuthorizationServer
-public class AuthApplication {
+public class OAuth2Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(AuthApplication.class, args);
+        SpringApplication.run(OAuth2Application.class, args);
     }
 
 }
