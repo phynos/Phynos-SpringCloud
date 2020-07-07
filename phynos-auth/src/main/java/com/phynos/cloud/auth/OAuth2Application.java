@@ -2,18 +2,12 @@ package com.phynos.cloud.auth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
-import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author by lupc
  * @date 2020-04-15 21:06
  */
 @SpringBootApplication
-@RestController
-@EnableResourceServer
-@EnableAuthorizationServer
 public class OAuth2Application {
 
     public static void main(String[] args) {
