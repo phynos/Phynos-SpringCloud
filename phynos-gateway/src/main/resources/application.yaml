@@ -6,16 +6,24 @@ server:
 spring:
   application:
     name: phynos-cloud-gateway
+  profiles:
+    # 指定配置
+    # route_simple：简单尝试
+    # route_stripPrefix：截取请求
+    # route_uri：转发指定地址并传入参数
+    # route_addRequestParameter：转发指定服务并传入参数
+    # route_hystrix：熔断
+    # route_requestRateLimiter：限流
+    # route_all：综合
+    active: route_simple
   cloud:
     gateway:
-      routes:
-        - id: neo_route
-          uri: http://www.ityouknow.com
-          predicates:
-            - Path=/spring-cloud
+      discovery:
+        locator:
+          enabled: true # 是否和服务注册与发现组件结合，设置为 true 后可以直接使用应用名称调用服务
 
 # 配置集群eureka注册中心
 eureka:
   client:
-    serviceUrl:
+    service-url:
       defaultZone: http://localhost:8761/eureka/
