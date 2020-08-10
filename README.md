@@ -1,6 +1,14 @@
 # Phynos-SpringCloud
 微服务
 
+## 版本说明
+
+| 模块  | 版本  | 备注  |
+| ------------ | ------------ | ------------ |
+| SpringBoot  | 2.1.8.RELEASE  | -- |
+| SpringCloud  | Greenwich.SR2  | --  |
+| Zipkin  | 2.10.1  | --  |
+
 ## 基础内容
 
 | 模块  | 端口  | 功能  |
