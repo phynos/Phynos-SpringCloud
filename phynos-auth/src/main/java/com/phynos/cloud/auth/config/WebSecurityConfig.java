@@ -19,8 +19,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/oauth2/keys").permitAll()
-                .anyRequest().authenticated();
+                .antMatchers("/oauth2/keys")
+                .permitAll()
+                .anyRequest()
+                .authenticated();
     }
 
     @Override
