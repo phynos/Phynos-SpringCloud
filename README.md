@@ -5,8 +5,8 @@
 
 | 模块  | 版本  | 备注  |
 | ------------ | ------------ | ------------ |
-| SpringBoot  | 2.1.8.RELEASE  | -- |
-| SpringCloud  | Greenwich.SR2  | --  |
+| SpringBoot  | 2.3.2.RELEASE  | -- |
+| SpringCloud  | Hoxton.SR7  | --  |
 | Zipkin  | 2.10.1  | --  |
 
 ## 基础内容

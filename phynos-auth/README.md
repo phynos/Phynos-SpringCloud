@@ -1,6 +1,8 @@
 
 # OAuth2.0
 
+最新版的Spring Security已经支持OAuth2。
+
 client_id：客户端id
 client_secret：一般存储在后台服务器
 response_type：返回类型
