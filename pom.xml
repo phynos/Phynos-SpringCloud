@@ -16,6 +16,7 @@
         <spring-boot.version>2.3.2.RELEASE</spring-boot.version>
         <spring-cloud.version>Hoxton.SR7</spring-cloud.version>
         <zipkin.version>2.10.1</zipkin.version>
+        <sap.version>2.3.0</sap.version>
     </properties>
 
     <modules>
@@ -63,6 +64,16 @@
                 <groupId>io.zipkin.java</groupId>
                 <artifactId>zipkin-autoconfigure-ui</artifactId>
                 <version>${zipkin.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-server</artifactId>
+                <version>${sap.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>de.codecentric</groupId>
+                <artifactId>spring-boot-admin-starter-client</artifactId>
+                <version>${sap.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
