@@ -7,7 +7,7 @@
 | ------------ | ------------ | ------------ |
 | SpringBoot  | 2.3.2.RELEASE  | -- |
 | SpringCloud  | Hoxton.SR7  | --  |
-| Zipkin  | 2.10.1  | --  |
+| Zipkin  | 2.12.9  | --  |
 
 ## 基础内容
 
