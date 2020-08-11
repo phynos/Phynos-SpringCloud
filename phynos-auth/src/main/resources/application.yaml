@@ -3,4 +3,4 @@ server:
 
 spring:
   application:
-    name: spring-cloud-auth2
+    name: spring-cloud-oauth2

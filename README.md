@@ -1,5 +1,5 @@
 # Phynos-SpringCloud
-微服务，基于SpringCloud Netflix构建
+微服务，基于SpringCloud（Netflix + Openfeign + Gateway + Sleuth + Zipkin）构建
 
 ## 版本说明
 
