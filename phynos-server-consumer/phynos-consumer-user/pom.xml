@@ -50,12 +50,6 @@
 <!--            <groupId>org.springframework</groupId>-->
 <!--            <artifactId>springloaded</artifactId>-->
 <!--        </dependency>-->
-
-        <!-- 调用跟踪 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zipkin</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
