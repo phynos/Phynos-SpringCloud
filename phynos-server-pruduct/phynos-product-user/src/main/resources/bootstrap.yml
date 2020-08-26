@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-cloud-product-sys
+    name: spring-cloud-product-user
   profiles:
     active: dev
 

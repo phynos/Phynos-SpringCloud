@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: phynos-cloud-config
+    name: spring-cloud-config
   profiles:
     active: native
   cloud:

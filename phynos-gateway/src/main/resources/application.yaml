@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: phynos-cloud-gateway
+    name: spring-cloud-gateway
   profiles:
     # 指定配置
     # route_simple：简单尝试
