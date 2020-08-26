@@ -10,9 +10,9 @@ cp phynos-gateway/target/${apps[3]}.jar ./
 cp phynos-auth/target/${apps[4]}.jar ./
 
 
-cp phynos-service-product/phynos-product-sys/target/${apps[5]}.jar ./
-cp phynos-service-product/phynos-product-user/target/${apps[6]}.jar ./
+cp phynos-server-product/phynos-product-sys/target/${apps[5]}.jar ./
+cp phynos-server-product/phynos-product-user/target/${apps[6]}.jar ./
 
-cp phynos-service-consumer/phynos-consumer-user/target/${apps[7]}.jar ./
+cp phynos-server-consumer/phynos-consumer-user/target/${apps[7]}.jar ./
 
 tar -czvf phynos-prod.tar.gz *.jar
