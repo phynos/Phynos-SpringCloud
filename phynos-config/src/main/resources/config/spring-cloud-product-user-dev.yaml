@@ -2,6 +2,6 @@
 
 config:
   product:
-    sys:
+    user:
       username: NaN
       password: dev-password
