@@ -18,7 +18,7 @@ done
 cd $PROGRAM
 
 rm -rf *.jar
-tar -xzvf phynos.tar.gz
+tar -xzvf phynos-prod.tar.gz
 
 for app in "${apps[@]}"
 do
