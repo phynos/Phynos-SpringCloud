@@ -1,17 +1,6 @@
 server:
   port: 6901
 
-spring:
-  application:
-    name: spring-cloud-consumer-user
-  cloud:
-    config:
-      discovery:
-        enabled: true
-        service-id: phynos-cloud-config
-      name: afdf # 配置文件名称
-      profile: dev # 后缀
-
 # 在feign中开启熔断器
 feign:
   hystrix:
