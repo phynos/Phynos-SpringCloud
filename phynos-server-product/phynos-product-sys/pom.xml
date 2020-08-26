@@ -3,26 +3,26 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>phynos-server-pruduct</artifactId>
+        <artifactId>phynos-server-product</artifactId>
         <groupId>com.phynos.cloud</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>phynos-product-user</artifactId>
+    <artifactId>phynos-product-sys</artifactId>
 
     <dependencies>
 
     </dependencies>
 
     <build>
-        <finalName>CloudProductUser</finalName>
+        <finalName>CloudProductSys</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.phynos.cloud.product.user.ProductUserApplication</mainClass>
+                    <mainClass>com.phynos.cloud.product.sys.ProductSysApplication</mainClass>
                 </configuration>
                 <executions>
                     <execution>
@@ -34,5 +34,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
