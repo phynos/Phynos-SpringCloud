@@ -1,0 +1,7 @@
+
+
+config:
+  product:
+    sys:
+      username: NaN
+      password: dev-password

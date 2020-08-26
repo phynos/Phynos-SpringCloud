@@ -9,3 +9,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+
+config:
+  product:
+    user:
+      username: NaN
+      password: NaN
