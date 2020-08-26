@@ -29,6 +29,7 @@
     </dependencies>
 
     <build>
+        <finalName>CloudConfig</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
