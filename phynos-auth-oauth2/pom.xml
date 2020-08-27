@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>phynos-auth</artifactId>
-    <description>oauth2服务</description>
+    <artifactId>phynos-auth-oauth2</artifactId>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -26,20 +26,21 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-security</artifactId>
         </dependency>
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.security</groupId>-->
-<!--            <artifactId>spring-security-jwt</artifactId>-->
-<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.security.oauth</groupId>
+            <artifactId>spring-security-oauth2</artifactId>
+            <version>2.4.0.RELEASE</version>
+        </dependency>
     </dependencies>
 
     <build>
-        <finalName>CloudAuth</finalName>
+        <finalName>CloudOAuth2</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.phynos.cloud.auth.AuthApplication</mainClass>
+                    <mainClass>com.phynos.cloud.oauth2.OAuth2Application</mainClass>
                 </configuration>
                 <executions>
                     <execution>

@@ -1,4 +1,4 @@
-package com.phynos.cloud.auth.config;
+package com.phynos.cloud.oauth2.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;

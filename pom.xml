@@ -25,6 +25,7 @@
         <module>phynos-eureka</module>
         <module>phynos-monitor</module>
         <module>phynos-auth</module>
+        <module>phynos-auth-oauth2</module>
         <module>phynos-server-consumer</module>
         <module>phynos-server-product</module>
         <module>phynos-dependencies</module>
