@@ -1,4 +1,4 @@
-package com.phynos.cloud.auth.config;
+package com.phynos.cloud.auth.security;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;

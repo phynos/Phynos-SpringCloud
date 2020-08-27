@@ -1,4 +1,4 @@
-package com.phynos.cloud.auth.config;
+package com.phynos.cloud.auth.filter;
 
 import org.springframework.security.access.SecurityMetadataSource;
 import org.springframework.security.access.intercept.AbstractSecurityInterceptor;
@@ -8,6 +8,7 @@ import javax.servlet.*;
 import java.io.IOException;
 
 /**
+ * 判断当前请求token是否有权访问当前请求地址
  * @author by lupc
  * @date 2020-08-27 14:06
  */
