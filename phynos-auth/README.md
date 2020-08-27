@@ -1,89 +1,17 @@
 
-# OAuth2.0
+## SpringSecurity+JWT
 
-最新版的Spring Security已经支持OAuth2。
+1. 客户端调用登录接口，传入用户名密码。
+2. 服务端请求身份认证中心，确认用户名密码正确。
+3. 服务端创建JWT，返回给客户端。
+4. 客户端拿到 JWT，进行存储（可以存储在缓存中，也可以存储在数据库中，如果是浏览器，可以存储在 Cookie中）在后续请求中，在 HTTP 请求头中加上 JWT。
+5. 服务端校验 JWT，校验通过后，返回相关资源和数据。
 
-client_id：客户端id
-client_secret：一般存储在后台服务器
-response_type：返回类型
-scope：数据范围
-redirect_uri：回调uri
-code：授权码
-grant_type：授权方式
+AuthenticationManager：户认证的管理类，所有的认证请求（比如login）都会通过提交一个token给AuthenticationManager的authenticate()方法来实现。当然事情肯定不是它来做，具体校验动作会由AuthenticationManager将请求转发给具体的实现类来做。根据实现反馈的结果再调用具体的Handler来给用户以反馈。
 
-## 授权方式
+AuthenticationProvider：证的具体实现类，一个provider是一种认证方式的实现，比如提交的用户名密码我是通过和DB中查出的user记录做比对实现的，那就有一个DaoProvider；如果我是通过CAS请求单点登录系统实现，那就有一个CASProvider。按照Spring一贯的作风，主流的认证方式它都已经提供了默认实现，比如DAO、LDAP、CAS、OAuth2等。
+                       前面讲了AuthenticationManager只是一个代理接口，真正的认证就是由AuthenticationProvider来做的。一个AuthenticationManager可以包含多个Provider，每个provider通过实现一个support方法来表示自己支持那种Token的认证。AuthenticationManager默认的实现类是ProviderManager。
 
-- 授权码（authorization-code）
-- 隐藏式（implicit）
-- 密码式（password）：
-- 客户端凭证（client credentials）
+UserDetailService：用户认证通过Provider来做，所以Provider需要拿到系统已经保存的认证信息，获取用户信息的接口spring-security抽象成UserDetailService。虽然叫Service,但是我更愿意把它认为是我们系统里经常有的UserDao。
 
-### 授权码
-
-第一步：用户点击下面的链接，去B网站请求授权
-https://b.com/oauth/authorize?
-  response_type=code&
-  client_id=CLIENT_ID&
-  redirect_uri=CALLBACK_URL&
-  scope=read
-  
-第二步：用户在B网站登录并决定是否授权，授权后会回调并附带授权码
-https://a.com/callback?code=AUTHORIZATION_CODE
-
-第三步：拿到授权码后，在“后台”服务器用授权码和客户端秘钥请求令牌
-https://b.com/oauth/token?
- client_id=CLIENT_ID&
- client_secret=CLIENT_SECRET&
- grant_type=authorization_code&
- code=AUTHORIZATION_CODE&
- redirect_uri=CALLBACK_URL
- 
-第四步：B网站授权后，会向回调地址返回令牌数据
-
-### 隐藏式
-
-前端直接向B网站请求令牌
-https://b.com/oauth/authorize?
-  response_type=token&
-  client_id=CLIENT_ID&
-  redirect_uri=CALLBACK_URL&
-  scope=read
-
-### 密码模式
-
-A网站直接根据用户提供的用户名和密码去B网站请求令牌，令牌直接在JSON中返回，不需要回调地址
-https://oauth.b.com/token?
-  grant_type=password&
-  username=USERNAME&
-  password=PASSWORD&
-  client_id=CLIENT_ID
-  
-### 凭证式
-
-https://oauth.b.com/token?
-  grant_type=client_credentials&
-  client_id=CLIENT_ID&
-  client_secret=CLIENT_SECRET
-
-## 令牌使用
-
-curl -H "Authorization: Bearer ACCESS_TOKEN" \
-"https://api.b.com"
-
-## 令牌更新
-
-https://b.com/oauth/token?
-  grant_type=refresh_token&
-  client_id=CLIENT_ID&
-  client_secret=CLIENT_SECRET&
-  refresh_token=REFRESH_TOKEN
-  
-## OAuth2.0提供的默认端点
-
-/oauth/authorize：授权端点
-/oauth/token：令牌端点
-/oauth/confirm_access：用户确认授权提交端点
-/oauth/error：授权服务错误信息端点
-/oauth/check_token：用于资源服务访问的令牌解析端点
-/oauth/token_key：提供公有密匙的端点，如果使用JWT令牌的话
-  
+SecurityContext：用户通过认证之后，就会为这个用户生成一个唯一的SecurityContext，里面包含用户的认证信息Authentication。通过SecurityContext我们可以获取到用户的标识Principle和授权信息GrantedAuthrity。在系统的任何地方只要通过SecurityHolder.getSecruityContext()就可以获取到SecurityContext。在Shiro中通过SecurityUtils.getSubject()到达同样的目的。
