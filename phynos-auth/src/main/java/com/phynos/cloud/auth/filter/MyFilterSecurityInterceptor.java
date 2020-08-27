@@ -2,13 +2,13 @@ package com.phynos.cloud.auth.filter;
 
 import org.springframework.security.access.SecurityMetadataSource;
 import org.springframework.security.access.intercept.AbstractSecurityInterceptor;
-import org.springframework.stereotype.Component;
 
 import javax.servlet.*;
 import java.io.IOException;
 
 /**
- * 判断当前请求token是否有权访问当前请求地址
+ * 权限管理过滤器
+ *
  * @author by lupc
  * @date 2020-08-27 14:06
  */
@@ -29,5 +29,6 @@ public class MyFilterSecurityInterceptor extends AbstractSecurityInterceptor imp
     public SecurityMetadataSource obtainSecurityMetadataSource() {
         return null;
     }
+
 
 }
