@@ -12,7 +12,7 @@ import java.io.IOException;
  * @author by lupc
  * @date 2020-08-27 14:06
  */
-@Component
+//@Component
 public class MyFilterSecurityInterceptor extends AbstractSecurityInterceptor implements Filter {
 
     @Override
