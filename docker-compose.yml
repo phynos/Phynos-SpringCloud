@@ -1,0 +1,101 @@
+version: '3'
+services:
+  phynos-mysql:
+    build:
+      context: ./db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+    container_name: phynos-mysql
+    image: phynos-mysql
+    ports:
+      - 3306:3306
+
+  phynos-redis:
+    image: redis:6.0
+    ports:
+      - 6379:6379
+    restart: always
+    container_name: phynos-redis
+    hostname: phynos-redis
+
+  phynos-monitor:
+    build:
+      context: ./phynos-monitor
+    restart: always
+    ports:
+      - 6000:6000
+    container_name: phynos-monitor
+    hostname: phynos-monitor
+    image: phynos-monitor
+
+  phynos-eureka:
+    build:
+      context: ./phynos-eureka
+    restart: always
+    ports:
+      - 8761:8761
+    container_name: phynos-eureka
+    hostname: phynos-eureka
+    image: phynos-eureka
+
+  phynos-config:
+    build:
+      context: ./phynos-config
+    restart: always
+    ports:
+      - 6300:6300
+    container_name: phynos-config
+    hostname: phynos-config
+    image: phynos-config
+
+  phynos-gateway:
+    build:
+      context: ./phynos-gateway
+    restart: always
+    ports:
+      - 6100:6100
+    container_name: phynos-gateway
+    hostname: phynos-gateway
+    image: phynos-gateway
+
+  phynos-auth:
+    build:
+      context: ./phynos-auth
+    restart: always
+    ports:
+      - 6400:6400
+    container_name: phynos-auth
+    hostname: phynos-auth
+    image: phynos-auth
+
+  phynos-product-sys:
+    build:
+      context: ./phynos-server-product/phynos-product-sys
+    restart: always
+    ports:
+      - 6801:6801
+    container_name: phynos-product-sys
+    hostname: phynos-product-sys
+    image: phynos-product-sys
+
+  phynos-product-user:
+    build:
+      context: ./phynos-server-product/phynos-product-user
+    restart: always
+    ports:
+      - 6802:6802
+    container_name: phynos-product-user
+    hostname: phynos-product-user
+    image: phynos-product-user
+
+  phynos-consumer-user:
+    build:
+      context: ./phynos-server-consumer/phynos-consumer-user
+    restart: always
+    ports:
+      - 6901:6901
+    container_name: phynos-consumer-user
+    hostname: phynos-consumer-user
+    image: phynos-consumer-user
+
