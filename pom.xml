@@ -29,6 +29,7 @@
         <module>phynos-server-consumer</module>
         <module>phynos-server-product</module>
         <module>phynos-dependencies</module>
+        <module>phynos-cloud-common</module>
     </modules>
     <packaging>pom</packaging>
 
