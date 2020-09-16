@@ -69,33 +69,33 @@ services:
     hostname: phynos-auth
     image: phynos-auth
 
-  phynos-product-sys:
+  phynos-cloud-product-sys:
     build:
-      context: ./phynos-server-product/phynos-product-sys
+      context: ./phynos-cloud-product/phynos-cloud-product-sys
     restart: always
     ports:
       - 6801:6801
-    container_name: phynos-product-sys
-    hostname: phynos-product-sys
-    image: phynos-product-sys
+    container_name: phynos-cloud-product-sys
+    hostname: phynos-cloud-product-sys
+    image: phynos-cloud-product-sys
 
-  phynos-product-user:
+  phynos-cloud-product-user:
     build:
-      context: ./phynos-server-product/phynos-product-user
+      context: ./phynos-cloud-product/phynos-cloud-product-user
     restart: always
     ports:
       - 6802:6802
-    container_name: phynos-product-user
-    hostname: phynos-product-user
-    image: phynos-product-user
+    container_name: phynos-cloud-product-user
+    hostname: phynos-cloud-product-user
+    image: phynos-cloud-product-user
 
-  phynos-consumer-user:
+  phynos-cloud-consumer-user:
     build:
-      context: ./phynos-server-consumer/phynos-consumer-user
+      context: ./phynos-cloud-consumer/phynos-cloud-consumer-user
     restart: always
     ports:
       - 6901:6901
-    container_name: phynos-consumer-user
-    hostname: phynos-consumer-user
-    image: phynos-consumer-user
+    container_name: phynos-cloud-consumer-user
+    hostname: phynos-cloud-consumer-user
+    image: phynos-cloud-consumer-user
 
