@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>phynos-eureka</artifactId>
+    <artifactId>phynos-cloud-eureka</artifactId>
 
     <dependencies>
         <!--服务中心-->

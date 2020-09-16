@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>phynos-gateway</artifactId>
+    <artifactId>phynos-cloud-gateway</artifactId>
 
     <dependencies>
         <dependency>
