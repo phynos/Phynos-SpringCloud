@@ -29,35 +29,35 @@ services:
     hostname: phynos-monitor
     image: phynos-monitor
 
-  phynos-eureka:
+  phynos-cloud-eureka:
     build:
-      context: ./phynos-eureka
+      context: ./phynos-cloud-eureka
     restart: always
     ports:
       - 8761:8761
-    container_name: phynos-eureka
-    hostname: phynos-eureka
-    image: phynos-eureka
+    container_name: phynos-cloud-eureka
+    hostname: phynos-cloud-eureka
+    image: phynos-cloud-eureka
 
-  phynos-config:
+  phynos-cloud-config:
     build:
-      context: ./phynos-config
+      context: ./phynos-cloud-config
     restart: always
     ports:
       - 6300:6300
-    container_name: phynos-config
-    hostname: phynos-config
-    image: phynos-config
+    container_name: phynos-cloud-config
+    hostname: phynos-cloud-config
+    image: phynos-cloud-config
 
-  phynos-gateway:
+  phynos-cloud-gateway:
     build:
-      context: ./phynos-gateway
+      context: ./phynos-cloud-gateway
     restart: always
     ports:
       - 6100:6100
-    container_name: phynos-gateway
-    hostname: phynos-gateway
-    image: phynos-gateway
+    container_name: phynos-cloud-gateway
+    hostname: phynos-cloud-gateway
+    image: phynos-cloud-gateway
 
   phynos-auth:
     build:

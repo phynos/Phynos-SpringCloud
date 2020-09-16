@@ -20,16 +20,16 @@
     </properties>
 
     <modules>
-        <module>phynos-config</module>
-        <module>phynos-gateway</module>
-        <module>phynos-eureka</module>
+        <module>phynos-dependencies</module>
+        <module>phynos-cloud-config</module>
+        <module>phynos-cloud-gateway</module>
+        <module>phynos-cloud-eureka</module>
         <module>phynos-monitor</module>
         <module>phynos-auth</module>
         <module>phynos-auth-oauth2</module>
-        <module>phynos-server-consumer</module>
-        <module>phynos-cloud-product</module>
-        <module>phynos-dependencies</module>
         <module>phynos-cloud-common</module>
+        <module>phynos-cloud-consumer</module>
+        <module>phynos-cloud-product</module>
     </modules>
     <packaging>pom</packaging>
 
