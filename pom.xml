@@ -27,7 +27,7 @@
         <module>phynos-auth</module>
         <module>phynos-auth-oauth2</module>
         <module>phynos-server-consumer</module>
-        <module>phynos-server-product</module>
+        <module>phynos-cloud-product</module>
         <module>phynos-dependencies</module>
         <module>phynos-cloud-common</module>
     </modules>
