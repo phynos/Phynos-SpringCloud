@@ -16,7 +16,6 @@
     <content url="file://$MODULE_DIR$/../phynos-cloud-auth">
       <sourceFolder url="file://$MODULE_DIR$/../phynos-cloud-auth/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/../phynos-cloud-auth/src/main/resources" type="java-resource" />
-      <excludeFolder url="file://$MODULE_DIR$/target" />
       <excludeFolder url="file://$MODULE_DIR$/../phynos-cloud-auth/target" />
     </content>
     <orderEntry type="inheritedJdk" />
