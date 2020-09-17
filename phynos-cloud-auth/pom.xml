@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>phynos-auth</artifactId>
+    <artifactId>phynos-cloud-auth</artifactId>
     <description>oauth2服务</description>
 
     <dependencies>
