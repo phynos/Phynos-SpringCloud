@@ -61,7 +61,7 @@ services:
 
   phynos-auth:
     build:
-      context: ./phynos-auth
+      context: ./phynos-cloud-auth
     restart: always
     ports:
       - 6400:6400

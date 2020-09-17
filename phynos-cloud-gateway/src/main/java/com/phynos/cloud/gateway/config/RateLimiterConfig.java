@@ -1,4 +1,4 @@
-package com.phynos.cloud.gateway;
+package com.phynos.cloud.gateway.config;
 
 import org.springframework.cloud.gateway.filter.ratelimit.KeyResolver;
 import org.springframework.context.annotation.Bean;
