@@ -1,0 +1,1 @@
+nohup ./minio server --address 0.0.0.0:9701 --config-dir /home/hongdian/minio/confi /home/hongdian/minio/data >/home/hongdian/minio/minio.log 2>&1 &
