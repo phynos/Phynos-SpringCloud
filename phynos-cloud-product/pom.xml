@@ -17,6 +17,7 @@
         <module>phynos-cloud-product-activiti</module>
         <module>phynos-cloud-product-minio</module>
         <module>phynos-cloud-product-quartz</module>
+        <module>phynos-cloud-product-device</module>
     </modules>
 
     <dependencies>
