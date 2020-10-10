@@ -29,7 +29,7 @@ spring:
           uri: http://www.baidu.com
           filters:
             - StripPrefix= 1 #过滤几个前缀/为间隔
-              AddResponseHeader="X-TestHeader",foobar
+            - AddResponseHeader="X-TestHeader",foobar
         - id: test-servier
           predicates:
             - Path=/iot/config/**
