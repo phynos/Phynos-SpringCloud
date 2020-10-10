@@ -18,6 +18,8 @@
         <module>phynos-cloud-product-minio</module>
         <module>phynos-cloud-product-quartz</module>
         <module>phynos-cloud-product-device</module>
+        <module>phynos-cloud-product-order</module>
+        <module>phynos-cloud-product-report</module>
     </modules>
 
     <dependencies>

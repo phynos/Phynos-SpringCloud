@@ -1,0 +1,15 @@
+
+
+spring:
+  application:
+    name: spring-cloud-product-order
+  profiles:
+    active: dev
+
+server:
+  port: 6804
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
