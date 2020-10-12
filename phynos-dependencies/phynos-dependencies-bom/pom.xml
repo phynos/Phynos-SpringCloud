@@ -12,5 +12,18 @@
     <artifactId>phynos-dependencies-bom</artifactId>
     <packaging>pom</packaging>
 
-
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.phynos.cloud</groupId>
+                <artifactId>phynos-cloud-common-jwt</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.phynos.cloud</groupId>
+                <artifactId>phynos-cloud-common-utils</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

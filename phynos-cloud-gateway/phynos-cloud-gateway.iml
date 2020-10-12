@@ -96,10 +96,6 @@
     <orderEntry type="library" name="Maven: com.fasterxml:classmate:1.5.1" level="project" />
     <orderEntry type="library" name="Maven: io.projectreactor.addons:reactor-extra:3.3.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-webflux:2.3.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:2.3.2.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.1" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.1" level="project" />
-    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.1" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-reactor-netty:2.3.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: io.projectreactor.netty:reactor-netty:0.9.10.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty-codec-http:4.1.51.Final" level="project" />
@@ -196,5 +192,12 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-actuator:2.3.2.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: io.micrometer:micrometer-core:1.5.3" level="project" />
     <orderEntry type="library" scope="RUNTIME" name="Maven: org.latencyutils:LatencyUtils:2.0.3" level="project" />
+    <orderEntry type="module" module-name="phynos-cloud-common-jwt" />
+    <orderEntry type="library" name="Maven: io.jsonwebtoken:jjwt:0.9.1" level="project" />
+    <orderEntry type="module" module-name="phynos-cloud-common-utils" />
+    <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-json:2.3.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.11.1" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.11.1" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-parameter-names:2.11.1" level="project" />
   </component>
 </module>
