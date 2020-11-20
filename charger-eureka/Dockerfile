@@ -1,0 +1,21 @@
+
+# 基于的镜像
+FROM java:8
+
+# 设置环境变量
+ENV TZ=Asia/Shanghai
+
+# 执行命令，为了防止多层镜像，这里只执行一次
+RUN mkdir -p /cloud
+
+# 指定工作目录
+WORKDIR /cloud
+
+# 声明暴露端口
+EXPOSE 8761
+
+#复制到容器指定目录
+COPY ./target/ChargerEureka.jar /charger/ChargerEureka.jar
+
+# 启动后执行命令
+ENTRYPOINT ["java","-jar","/charger/ChargerEureka.jar"]
