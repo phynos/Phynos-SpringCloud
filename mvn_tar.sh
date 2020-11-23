@@ -28,4 +28,6 @@ cd $dist
 tag=`date '+%Y%m%d_%H%M%S'`
 tar -czvf "charger${tag}.tar.gz" *.jar
 
+cd ../
+
 mvn clean
