@@ -9,10 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>phynos-cloud-consumer</artifactId>
+    <artifactId>charger-consumer</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>phynos-cloud-consumer-user</module>
+        <module>charger-consumer-user</module>
     </modules>
 
     <dependencies>
