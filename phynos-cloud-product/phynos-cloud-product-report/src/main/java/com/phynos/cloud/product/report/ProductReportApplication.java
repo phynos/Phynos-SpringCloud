@@ -1,4 +1,4 @@
-package com.phynos.cloud.product.report;
+package com.phynos.charger.product.report;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.phynos.cloud</groupId>
-    <artifactId>phynos-cloud-parent</artifactId>
+    <groupId>com.phynos.charger</groupId>
+    <artifactId>charger-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -20,14 +20,14 @@
     </properties>
 
     <modules>
-        <module>phynos-monitor</module>
-        <module>phynos-dependencies</module>
-        <module>phynos-cloud-common</module>
-        <module>phynos-cloud-auth</module>
-        <module>phynos-cloud-auth-oauth2</module>
-        <module>phynos-cloud-config</module>
-        <module>phynos-cloud-eureka</module>
-        <module>phynos-cloud-gateway</module>
+        <module>charger-monitor</module>
+        <module>charger-dependencies</module>
+        <module>charger-common</module>
+        <module>charger-auth</module>
+        <module>charger-auth-oauth2</module>
+        <module>charger-config</module>
+        <module>charger-eureka</module>
+        <module>charger-gateway</module>
         <module>phynos-cloud-product</module>
         <module>phynos-cloud-consumer</module>
     </modules>

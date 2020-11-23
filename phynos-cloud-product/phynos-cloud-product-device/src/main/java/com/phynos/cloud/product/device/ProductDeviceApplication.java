@@ -1,4 +1,4 @@
-package com.phynos.cloud.product.device;
+package com.phynos.charger.product.device;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

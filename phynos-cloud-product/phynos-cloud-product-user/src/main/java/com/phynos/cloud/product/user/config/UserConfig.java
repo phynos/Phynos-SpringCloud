@@ -1,4 +1,4 @@
-package com.phynos.cloud.product.user.config;
+package com.phynos.charger.product.user.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;

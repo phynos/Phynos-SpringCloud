@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-    com.phynos.cloud.product.oss.MinioAutoConfiguration
+    com.phynos.charger.product.oss.MinioAutoConfiguration

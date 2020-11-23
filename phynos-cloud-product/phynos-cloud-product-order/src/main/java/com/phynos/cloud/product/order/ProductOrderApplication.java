@@ -1,4 +1,4 @@
-package com.phynos.cloud.product.order;
+package com.phynos.charger.product.order;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

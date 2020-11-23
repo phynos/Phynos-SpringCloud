@@ -1,0 +1,6 @@
+server:
+  port: 6400
+
+spring:
+  application:
+    name: charger-auth

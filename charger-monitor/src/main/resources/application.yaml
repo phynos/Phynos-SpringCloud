@@ -1,0 +1,24 @@
+
+spring:
+  application:
+    name: charger-monitor
+  boot:
+    admin:
+      ui:
+        title: '微服务后台监控'
+
+server:
+  port: 6000
+  servlet:
+    context-path: /app-monitor
+
+management:
+  endpoints:
+    web:
+      base-path: '/actuator'
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+

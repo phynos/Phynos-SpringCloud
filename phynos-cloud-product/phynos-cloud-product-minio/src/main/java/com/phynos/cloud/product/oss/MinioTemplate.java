@@ -1,4 +1,4 @@
-package com.phynos.cloud.product.oss;
+package com.phynos.charger.product.oss;
 
 import io.minio.*;
 import io.minio.errors.*;

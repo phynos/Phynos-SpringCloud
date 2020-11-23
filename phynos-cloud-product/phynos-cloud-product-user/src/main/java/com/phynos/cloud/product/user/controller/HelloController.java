@@ -1,6 +1,6 @@
-package com.phynos.cloud.product.user.controller;
+package com.phynos.charger.product.user.controller;
 
-import com.phynos.cloud.product.user.config.UserConfig;
+import com.phynos.charger.product.user.config.UserConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

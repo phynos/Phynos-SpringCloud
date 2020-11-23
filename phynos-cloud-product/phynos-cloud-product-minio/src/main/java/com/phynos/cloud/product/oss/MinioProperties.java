@@ -1,4 +1,4 @@
-package com.phynos.cloud.product.oss;
+package com.phynos.charger.product.oss;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 

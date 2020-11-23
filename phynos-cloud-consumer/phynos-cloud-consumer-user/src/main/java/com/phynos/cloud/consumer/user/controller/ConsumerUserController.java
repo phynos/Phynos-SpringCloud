@@ -1,6 +1,6 @@
-package com.phynos.cloud.consumer.user.controller;
+package com.phynos.charger.consumer.user.controller;
 
-import com.phynos.cloud.consumer.user.remote.HelloRemote;
+import com.phynos.charger.consumer.user.remote.HelloRemote;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;

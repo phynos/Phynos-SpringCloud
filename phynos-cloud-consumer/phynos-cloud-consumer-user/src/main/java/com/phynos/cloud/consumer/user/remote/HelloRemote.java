@@ -1,4 +1,4 @@
-package com.phynos.cloud.consumer.user.remote;
+package com.phynos.charger.consumer.user.remote;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,6 +1,0 @@
-server:
-  port: 6400
-
-spring:
-  application:
-    name: spring-cloud-auth

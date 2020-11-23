@@ -1,0 +1,44 @@
+
+
+server:
+  port: 6100
+
+spring:
+  application:
+    name: charger-gateway
+  profiles:
+    # 指定配置
+    # route_simple：简单尝试
+    # route_stripPrefix：截取请求
+    # route_uri：转发指定地址并传入参数
+    # route_addRequestParameter：转发指定服务并传入参数
+    # route_hystrix：熔断
+    # route_requestRateLimiter：限流
+    # route_all：综合
+    active: route_simple
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true # 是否和服务注册与发现组件结合，设置为 true 后可以直接使用应用名称调用服务
+      routes:
+        - id: iot
+          predicates:
+            - Path=/test/**
+              Host="**.abc.org"
+          uri: http://www.baidu.com
+          filters:
+            - StripPrefix= 1 #过滤几个前缀/为间隔
+            - AddResponseHeader="X-TestHeader",foobar
+        - id: test-servier
+          predicates:
+            - Path=/iot/config/**
+          uri: lb://nacos-provider-example
+          filters:
+            - StripPrefix= 1 #过滤几个前缀/为间隔
+
+# 配置集群eureka注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

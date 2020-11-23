@@ -1,6 +1,0 @@
-server:
-  port: 6401
-
-spring:
-  application:
-    name: spring-cloud-oauth2
