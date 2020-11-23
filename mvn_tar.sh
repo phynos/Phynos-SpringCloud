@@ -25,6 +25,7 @@ cp charger-consumer/charger-consumer-user/target/${apps[7]}.jar $dist
 
 
 cd $dist
-tar -czvf charger.tar.gz *.jar
+tag=`date '+%Y%m%d_%H%M%S'`
+tar -czvf "charger${tag}.tar.gz" *.jar
 
 mvn clean
