@@ -16,7 +16,7 @@
     </dependencies>
 
     <build>
-        <finalName>CloudProductSys</finalName>
+        <finalName>ChargerSys</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

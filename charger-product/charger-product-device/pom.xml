@@ -20,7 +20,7 @@
 
 
     <build>
-        <finalName>CloudProductDevice</finalName>
+        <finalName>ChargerDevice</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

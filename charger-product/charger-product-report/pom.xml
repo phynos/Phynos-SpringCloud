@@ -13,7 +13,7 @@
 
 
     <build>
-        <finalName>CloudProductReport</finalName>
+        <finalName>ChargerReport</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

@@ -1,7 +1,7 @@
 
 
 PROGRAM='/home/lupc/apps'
-apps=(CloudMonitor CloudEureka CloudConfig CloudGateway CloudAuth2 CloudProductSys CloudProductUser CloudConsumerUser)
+apps=(ChargerMonitor ChargerEureka ChargerConfig ChargerGateway ChargerAuth2 ChargerSys ChargerUser ChargerConsumerUser)
 
 for app in "${apps[@]}"
 do

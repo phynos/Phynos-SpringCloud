@@ -17,7 +17,7 @@
     </dependencies>
 
     <build>
-        <finalName>CloudProductOrder</finalName>
+        <finalName>ChargerOrder</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
