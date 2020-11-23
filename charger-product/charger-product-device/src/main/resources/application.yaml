@@ -1,0 +1,15 @@
+
+
+spring:
+  application:
+    name: spring-cloud-product-device
+  profiles:
+    active: dev
+
+server:
+  port: 6803
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

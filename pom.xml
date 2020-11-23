@@ -28,8 +28,8 @@
         <module>charger-config</module>
         <module>charger-eureka</module>
         <module>charger-gateway</module>
-        <module>phynos-cloud-product</module>
-        <module>phynos-cloud-consumer</module>
+        <module>charger-product</module>
+        <module>charger-consumer</module>
     </modules>
     <packaging>pom</packaging>
 

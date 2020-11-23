@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: spring-cloud-product-user
+  profiles:
+    active: dev
+
+---
+spring:
+  profiles: prod
+  cloud:
+    config:
+      uri: http://localhost:6300
+      label: master
+      profile: prod
+
+
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      uri: http://localhost:6300
+      label: master
+      profile: dev

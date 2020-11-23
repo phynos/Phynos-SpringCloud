@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: spring-cloud-product-user
+
+server:
+  port: 6801
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
+config:
+  product:
+    user:
+      username: NaN
+      password: NaN
