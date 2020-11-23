@@ -1,18 +1,30 @@
 
+dist=./dist
+mkdir -p dist
+
+echo start build...
+mvn clean package -am -Dmaven.test.skip=true
+
+echo clean files...
+rm -rf ${dist}/*.jar
+rm -rf ${dist}/*.gz
+
 apps=(ChargerMonitor ChargerEureka ChargerConfig ChargerGateway ChargerAuth2 ChargerSys ChargerUser ChargerConsumerUser)
 
-rm -rf ./*.jar
-
-cp charger-monitor/target/${apps[0]}.jar ./
-cp charger-eureka/target/${apps[1]}.jar ./
-cp charger-config/target/${apps[2]}.jar ./
-cp charger-gateway/target/${apps[3]}.jar ./
-cp charger-auth/target/${apps[4]}.jar ./
+cp charger-monitor/target/${apps[0]}.jar $dist
+cp charger-eureka/target/${apps[1]}.jar $dist
+cp charger-config/target/${apps[2]}.jar $dist
+cp charger-gateway/target/${apps[3]}.jar $dist
+cp charger-auth/target/${apps[4]}.jar $dist
 
 
-cp charger-product/charger-product-sys/target/${apps[5]}.jar ./
-cp charger-product/charger-product-user/target/${apps[6]}.jar ./
+cp charger-product/charger-product-sys/target/${apps[5]}.jar $dist
+cp charger-product/charger-product-user/target/${apps[6]}.jar $dist
 
-cp charger-consumer/charger-consumer-user/target/${apps[7]}.jar ./
+cp charger-consumer/charger-consumer-user/target/${apps[7]}.jar $dist
 
-tar -czvf phynos-prod.tar.gz *.jar
+
+cd $dist
+tar -czvf charger.tar.gz *.jar
+
+mvn clean
