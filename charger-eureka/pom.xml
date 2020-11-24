@@ -20,7 +20,7 @@
     </dependencies>
 
     <build>
-        <finalName>ChargerEureka</finalName>
+        <finalName>charger-eureka</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

@@ -40,7 +40,7 @@
     </dependencies>
 
     <build>
-        <finalName>ChargerConsumerUser</finalName>
+        <finalName>charger-consumer-user</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

@@ -36,7 +36,7 @@
     </dependencies>
 
     <build>
-        <finalName>ChargerMonitor</finalName>
+        <finalName>charger-monitor</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

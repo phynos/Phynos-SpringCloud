@@ -9,20 +9,43 @@ echo clean files...
 rm -rf ${dist}/*.jar
 rm -rf ${dist}/*.gz
 
-apps=(ChargerMonitor ChargerEureka ChargerConfig ChargerGateway ChargerAuth2 ChargerSys ChargerUser ChargerConsumerUser)
+function buildBaseApps() {
+    echo build base apps:
+    apps=(charger-monitor charger-eureka charger-config charger-gateway charger-auth)
+    for app in "${apps[@]}"
+    do
+      echo "build,app=${app}"
+      cp ${app}/target/${app}.jar $dist
+    done
+}
 
-cp charger-monitor/target/${apps[0]}.jar $dist
-cp charger-eureka/target/${apps[1]}.jar $dist
-cp charger-config/target/${apps[2]}.jar $dist
-cp charger-gateway/target/${apps[3]}.jar $dist
-cp charger-auth/target/${apps[4]}.jar $dist
+function buildProduct() {
+    echo build product apps:
+    dir=charger-product
+    apps=(charger-product-sys charger-product-user)
+    for app in "${apps[@]}"
+    do
+      proj=$app
+      echo "build,app=${app}"
+      cp ${dir}/${proj}/target/${app}.jar $dist
+    done
+}
 
+function buildConsumer() {
+    echo build consumer apps:
+    dir=charger-consumer
+    apps=(charger-consumer-user)
+    for app in "${apps[@]}"
+    do
+      proj=$app
+      echo "build,app=${app}"
+      cp ${dir}/${proj}/target/${app}.jar $dist
+    done
+}
 
-cp charger-product/charger-product-sys/target/${apps[5]}.jar $dist
-cp charger-product/charger-product-user/target/${apps[6]}.jar $dist
-
-cp charger-consumer/charger-consumer-user/target/${apps[7]}.jar $dist
-
+buildBaseApps
+buildProduct
+buildConsumer
 
 cd $dist
 tag=`date '+%Y%m%d_%H%M%S'`

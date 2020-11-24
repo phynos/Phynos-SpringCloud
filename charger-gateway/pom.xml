@@ -65,7 +65,7 @@
     </dependencyManagement>
 
     <build>
-        <finalName>ChargerGateway</finalName>
+        <finalName>charger-gateway</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

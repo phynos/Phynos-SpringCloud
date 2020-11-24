@@ -34,7 +34,7 @@
     </dependencies>
 
     <build>
-        <finalName>ChargerOAuth2</finalName>
+        <finalName>charger-auth-oauth2</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
