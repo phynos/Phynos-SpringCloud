@@ -26,10 +26,16 @@ function startApps() {
   done
 }
 
+function backupApps() {
+    
+}
+
 dir='/home/lupc/apps'
+backup='/home/lupc/backup'
 
 rm -rf $dir
 mkdir -p $dir
 cp charger*.tar.gz $dir
+rm -f charger*.tar.gz
 cd $dir
 tar -xzvf charger*.tar.gz -C $dir
