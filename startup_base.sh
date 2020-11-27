@@ -1,7 +1,7 @@
 
 source ./startup.sh
 
-apps=(ChargerMonitor ChargerEureka ChargerConfig ChargerGateway ChargerAuth)
+apps=(charger-monitor charger-eureka charger-config charger-gateway charger-atuh)
 
 # 杀掉所有进程
 echo '杀掉所有进程'
