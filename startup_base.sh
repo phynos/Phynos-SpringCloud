@@ -1,6 +1,10 @@
 
 source ./startup.sh
 
+dir='/home/lupc/apps'
+
+repackage $dir charger-base.tar.gz
+
 apps=(charger-monitor charger-eureka charger-config charger-gateway charger-atuh)
 
 # 杀掉所有进程

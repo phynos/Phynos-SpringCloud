@@ -26,16 +26,27 @@ function startApps() {
   done
 }
 
-function backupApps() {
-    
+function repackage() {
+  if [ -z $dir ];then
+    echo please set global var:dir
+    return -1
+  fi
+  package=$2
+  if [  -f $package ];then
+    echo "package exist:$package"
+  else
+    echo "package not found:$package"
+    exit 1
+  fi
+  rm -rf $dir
+  mkdir -p $dir
+  cd $dir
+  tar -xzvf ../$package -C $dir
 }
 
-dir='/home/lupc/apps'
-backup='/home/lupc/backup'
+function backupApps() {
 
-rm -rf $dir
-mkdir -p $dir
-cp charger*.tar.gz $dir
-rm -f charger*.tar.gz
-cd $dir
-tar -xzvf charger*.tar.gz -C $dir
+}
+
+# dir='/home/lupc/apps'
+# backup='/home/lupc/backup'
