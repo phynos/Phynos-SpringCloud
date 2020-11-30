@@ -1,6 +1,6 @@
 spring:
   application:
-    name: spring-cloud-product-sys
+    name: charger-product-sys
   profiles:
     active: dev
 
