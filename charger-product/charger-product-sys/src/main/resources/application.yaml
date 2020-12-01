@@ -5,7 +5,7 @@ spring:
     active: dev
 
 server:
-  port: 6802
+  port: 6801
 
 eureka:
   client:

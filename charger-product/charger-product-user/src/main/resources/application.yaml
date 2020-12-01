@@ -3,13 +3,12 @@ spring:
     name: charger-product-user
 
 server:
-  port: 6801
+  port: 6811
 
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
 
 config:
   product:
