@@ -1,7 +1,7 @@
 
 
 server:
-  port: 6100
+  port: 6710
 
 spring:
   application:
