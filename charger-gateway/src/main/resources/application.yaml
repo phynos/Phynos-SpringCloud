@@ -4,16 +4,6 @@ server:
   port: 6710
 
 spring:
-  profiles:
-    # 指定配置
-    # route_simple：简单尝试
-    # route_stripPrefix：截取请求
-    # route_uri：转发指定地址并传入参数
-    # route_addRequestParameter：转发指定服务并传入参数
-    # route_hystrix：熔断
-    # route_requestRateLimiter：限流
-    # route_all：综合
-    active: dev
   cloud:
     gateway:
       discovery:

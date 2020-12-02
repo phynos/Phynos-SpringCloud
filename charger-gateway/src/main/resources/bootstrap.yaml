@@ -2,6 +2,9 @@
 spring:
   application:
     name: charger-gateway
+  profiles:
+    # 必须在这里配置，不然无法从配置中心获取信息
+    active: dev
 
 ---
 spring:
