@@ -1,0 +1,31 @@
+
+spring:
+  application:
+    name: charger-auth
+
+---
+spring:
+  profiles: prod
+  cloud:
+    config:
+      #uri: http://localhost:6300
+      # 从注册中心获取配置中心的服务
+      discovery:
+        enabled: true
+        service-id: charger-config
+      label: master
+      profile: prod
+
+
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      #uri: http://localhost:6300
+      # 从注册中心获取配置中心的服务
+      discovery:
+        enabled: true
+        service-id: charger-config
+      label: master
+      profile: dev

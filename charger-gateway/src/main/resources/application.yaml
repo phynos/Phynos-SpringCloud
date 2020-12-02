@@ -13,7 +13,7 @@ spring:
     # route_hystrix：熔断
     # route_requestRateLimiter：限流
     # route_all：综合
-    active: route_simple
+    active: dev
   cloud:
     gateway:
       discovery:

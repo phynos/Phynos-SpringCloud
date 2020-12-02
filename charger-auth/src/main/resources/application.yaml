@@ -1,6 +1,3 @@
 server:
   port: 6730
 
-spring:
-  application:
-    name: charger-auth
