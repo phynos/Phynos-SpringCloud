@@ -1,5 +1,7 @@
 server:
   port: 6901
+  servlet:
+    context-path: /api/user
 
 # 在feign中开启熔断器
 feign:
