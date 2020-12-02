@@ -4,8 +4,6 @@ server:
   port: 6710
 
 spring:
-  application:
-    name: charger-gateway
   profiles:
     # 指定配置
     # route_simple：简单尝试

@@ -26,6 +26,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
         </dependency>
+        <!-- spring cloud config 客户端包 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
         <!-- 限流 -->
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.boot</groupId>-->
