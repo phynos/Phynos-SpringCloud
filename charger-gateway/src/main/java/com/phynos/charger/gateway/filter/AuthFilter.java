@@ -1,7 +1,9 @@
 package com.phynos.charger.gateway.filter;
 
+import com.phynos.charger.common.jwt.JwtTokenUtil;
 import com.phynos.charger.common.utils.JsonResult;
 import com.phynos.charger.common.utils.JsonUtil;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
@@ -42,8 +44,10 @@ public class AuthFilter implements GlobalFilter, Ordered {
         String token = exchange.getRequest().getHeaders().getFirst("Authorization");
         ServerHttpResponse response = exchange.getResponse();
 
-        boolean valid = uri.startsWith("/authenticate");
+        String username = new JwtTokenUtil().getUsernameFromToken(token);
+        boolean valid = StringUtils.isNotEmpty(username);
         if (valid) {
+            logger.info("auth success,username={}", username);
             return chain.filter(exchange);
         } else {
             //返回鉴权失败
