@@ -1,6 +1,10 @@
 server:
   port: 6730
 
+spring:
+  profiles:
+    active: dev
+
 # 配置集群eureka注册中心
 eureka:
   instance:
