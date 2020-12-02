@@ -18,18 +18,10 @@ spring:
           filters:
             - StripPrefix= 1 #过滤几个前缀/为间隔
             - AddResponseHeader="X-TestHeader",foobar
-        - id: test-servier
-          predicates:
-            - Path=/iot/config/**
-          uri: lb://nacos-provider-example
-          filters:
-            - StripPrefix= 1 #过滤几个前缀/为间隔
         - id: api-user
           predicates:
             - Path=/api/user/**
           uri: lb://charger-consumer-user
-          filters:
-            - StripPrefix= 1 #过滤几个前缀/为间隔
 
 # 配置集群eureka注册中心
 eureka:
