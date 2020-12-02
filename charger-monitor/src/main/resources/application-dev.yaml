@@ -1,0 +1,25 @@
+
+spring:
+  application:
+    name: charger-monitor
+  boot:
+    admin:
+      ui:
+        title: '微服务后台监控'
+        public-url: http://42.192.126.212:7604/ # 解决frp反向代理的问题
+
+server:
+  port: 6700
+  servlet:
+    context-path: /app-monitor
+
+management:
+  endpoints:
+    web:
+      base-path: '/actuator'
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
