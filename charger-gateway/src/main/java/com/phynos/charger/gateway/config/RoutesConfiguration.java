@@ -4,6 +4,7 @@ import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 
 /**
  * gateway配置或在yaml里面配置
@@ -18,6 +19,7 @@ import org.springframework.context.annotation.Configuration;
  * @date 2020-06-09 11:40
  */
 @Configuration
+@Profile("test")
 public class RoutesConfiguration {
 
     @Bean
