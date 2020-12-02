@@ -48,6 +48,9 @@ public class AuthFilter implements GlobalFilter, Ordered {
         boolean valid = StringUtils.isNotEmpty(username);
         if (valid) {
             logger.info("auth success,username={}", username);
+            //验证通过后，将用户名写入
+            exchange.getRequest().getHeaders().add("username", username);
+
             return chain.filter(exchange);
         } else {
             //返回鉴权失败
