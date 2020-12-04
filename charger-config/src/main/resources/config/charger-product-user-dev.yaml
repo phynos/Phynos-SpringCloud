@@ -39,7 +39,7 @@ management:
 logging:
   file:
     name: charger-product-user-${server.port}.log
-    path: logs
+    path: /home/lupc/logs
     max-size: 300MB #日志文件大小
     max-history: 15
   level:

@@ -25,7 +25,7 @@ management:
 logging:
   file:
     name: charger-gateway.log
-    path: logs
+    path: /home/lupc/logs
     max-size: 300MB #日志文件大小
     max-history: 15
   level:
