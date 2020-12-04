@@ -23,7 +23,8 @@ management:
 
 # 日志
 logging:
-  file: logs/charger-gateway.log
+  file:
+    name: logs/charger-gateway.log
   file.max-size: 300MB #日志文件大小
   file.max-history: 15 #最大保留天数
   level:
