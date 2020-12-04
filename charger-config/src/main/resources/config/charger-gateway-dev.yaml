@@ -24,9 +24,10 @@ management:
 # 日志
 logging:
   file:
-    name: logs/charger-gateway.log
-  file.max-size: 300MB #日志文件大小
-  file.max-history: 15 #最大保留天数
+    name: charger-gateway.log
+    path: logs
+    max-size: 300MB #日志文件大小
+    max-history: 15
   level:
     com.tf.traffic: DEBUG
     com:
