@@ -42,13 +42,19 @@
 
 ### 分布式ID
 
-1. 基于雪花算法
-2. 基于zookeeper实现
+1. 基于UUID
+2. 基于数据库自增id
+3. 数据库多主模式
+4. 号段模式
+5. redis
+6. 基于雪花算法
+7. 基于zookeeper实现
+
 
 ### 分布式锁
 
 1. 基于redis实现
-2. 基于zookeeper实现
+2. 基于zookeeper实现——curator自带工业级实现
 
 ### 分布式事务
 
