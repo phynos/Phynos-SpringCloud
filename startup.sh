@@ -4,7 +4,7 @@ function killApps() {
   for app in "${apps[@]}"
   do
     PID=`ps -ef|grep -v grep | grep $app| awk '{print $2}'`
-    if [ -z $PID ];then
+    if [ -z "$PID" ];then
       echo 'app: '$app',pid: is empty'
     else
       echo 'kill app: '$app',pid:'$PID

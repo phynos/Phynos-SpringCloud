@@ -8,6 +8,10 @@ spring:
     admin:
       ui:
         title: '微服务后台监控'
+  security:
+    user:
+      name: admin
+      password: 123456  #用命令行启动替换
 
 server:
   port: 6700
