@@ -6,7 +6,7 @@ spring:
     admin:
       ui:
         title: '微服务后台监控'
-        public-url: http://42.192.126.212
+        public-url: http://42.192.126.212:7604
 
 server:
   port: 6700
