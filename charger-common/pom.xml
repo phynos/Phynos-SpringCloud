@@ -16,6 +16,7 @@
         <module>charger-common-utils</module>
         <module>charger-common-poi</module>
         <module>charger-common-jwt</module>
+        <module>charger-common-swagger</module>
     </modules>
 
 
