@@ -24,7 +24,6 @@
         <module>charger-product-sys</module>
         <module>charger-product-activiti</module>
         <module>charger-product-minio</module>
-        <module>charger-product-quartz</module>
         <module>charger-product-device</module>
         <module>charger-product-order</module>
         <module>charger-product-report</module>
