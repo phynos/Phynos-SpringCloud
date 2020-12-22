@@ -34,6 +34,11 @@ public class ${model}Controller extends BaseController {
     @Autowired
     ${model}Service ${model?uncap_first}Service;
 
+    @PostMapping("/pageList")
+    public JsonResult pageList(BaseParam param) {
+        return ${model?uncap_first}Service.pageList(param);
+    }
+
     @PostMapping("/list")
     public JsonResult list(BaseParam param) {
         return ${model?uncap_first}Service.list(param);
@@ -60,9 +65,9 @@ public class ${model}Controller extends BaseController {
         return ${model?uncap_first}Service.mod(param);
     }
 
-    @PostMapping("/info")
-    public JsonResult info(@RequestBody IdParam<${primary_id_type}> param) {
-        return ${model?uncap_first}Service.info(param.getId());
+    @PostMapping("/detail")
+    public JsonResult detail(@RequestBody IdParam<${primary_id_type}> param) {
+        return ${model?uncap_first}Service.detail(param.getId());
     }
 
 }

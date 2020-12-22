@@ -1,6 +1,6 @@
 package com.phynos.charger.generator;
 
-import com.phynos.framework.generator.util.FreeMarkerTemplateUtils;
+import com.phynos.charger.generator.util.FreeMarkerTemplateUtils;
 import freemarker.template.Template;
 
 import java.io.*;

@@ -12,7 +12,9 @@ import java.util.List;
 **/
 public interface ${model}Service {
 
-    JsonResult list(BaseParam param);
+    JsonResult pageList(BaseParam param);
+
+    JsonResult list();
 
     JsonResult add(${model} param);
 
@@ -20,6 +22,6 @@ public interface ${model}Service {
 
     JsonResult mod(${model} param);
 
-    JsonResult info(${primary_id_type} id);
+    JsonResult detail(${primary_id_type} id);
 
 }

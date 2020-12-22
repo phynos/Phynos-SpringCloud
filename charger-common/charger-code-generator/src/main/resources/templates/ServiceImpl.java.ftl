@@ -30,7 +30,7 @@ public class ${model}ServiceImpl  extends BaseServiceImpl implements ${model}Ser
     ${model}Mapper ${model?uncap_first}Mapper;
 
     @Override
-    public JsonResult list(BaseParam param) {
+    public JsonResult pageList(BaseParam param) {
         Page page = PageHelper.startPage(param.getPageIndex(), param.getPageSize());
         ${model}Example ${model?uncap_first}Example = new ${model}Example();
         ${model}Example.Criteria criteria = ${model?uncap_first}Example.createCriteria();
@@ -39,6 +39,14 @@ public class ${model}ServiceImpl  extends BaseServiceImpl implements ${model}Ser
         PageHelper.clearPage();//一定要清理
         JsonList jl = JsonList.create(total, param.getPageIndex(), param.getPageSize(), data);
         return JsonResult.data(jl);
+    }
+
+    @Override
+    public JsonResult list(BaseParam param) {
+        ${model}Example ${model?uncap_first}Example = new ${model}Example();
+        ${model}Example.Criteria criteria = ${model?uncap_first}Example.createCriteria();
+        List<${model}> data = ${model?uncap_first}Mapper.selectByExample(${model?uncap_first}Example);
+        return JsonResult.data(data);
     }
 
     @Override
@@ -60,7 +68,7 @@ public class ${model}ServiceImpl  extends BaseServiceImpl implements ${model}Ser
     }
 
     @Override
-    public JsonResult info(${primary_id_type} id) {
+    public JsonResult detail(${primary_id_type} id) {
         ${model} ${model?uncap_first} = ${model?uncap_first}Mapper.selectByPrimaryKey(id);
         return JsonResult.data(${model?uncap_first});
     }
