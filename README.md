@@ -5,8 +5,8 @@
 
 | 模块  | 版本  | 备注  |
 | ------------ | ------------ | ------------ |
-| SpringBoot  | 2.3.2.RELEASE  | -- |
-| SpringCloud  | Hoxton.SR7  | --  |
+| SpringBoot  | 2.4.2  | -- |
+| SpringCloud  | 2020.0.0  | --  |
 | Zipkin  | 2.12.9  | --  |
 
 ## 基础内容
