@@ -1,10 +1,20 @@
 
-
 server:
   port: 6710
 
 spring:
+  application:
+    name: charger-gateway
+  profiles:
+    # 必须在这里配置，不然无法从配置中心获取信息
+    active: dev
+  config:
+    import: 'configserver:'
   cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: charger-config
     gateway:
       discovery:
         locator:

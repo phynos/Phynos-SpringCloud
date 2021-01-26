@@ -7,17 +7,18 @@ spring:
 
 ---
 spring:
-  profiles: prod
   cloud:
     config:
       uri: http://localhost:6300
       label: master
       profile: prod
+  config:
+    activate:
+      on-profile:
 
 
 ---
 spring:
-  profiles: dev
   cloud:
     config:
       #uri: http://localhost:6300
@@ -27,3 +28,6 @@ spring:
         service-id: charger-config
       label: master
       profile: dev
+  config:
+    activate:
+      on-profile:

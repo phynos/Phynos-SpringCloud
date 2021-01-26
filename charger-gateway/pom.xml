@@ -24,7 +24,7 @@
         <!-- 熔断降级 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+            <artifactId>spring-cloud-starter-circuitbreaker-resilience4j</artifactId>
         </dependency>
         <!-- spring cloud config 客户端包 -->
         <dependency>
