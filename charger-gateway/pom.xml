@@ -70,7 +70,7 @@
     </dependencyManagement>
 
     <build>
-        <finalName>charger-gateway</finalName>
+        <finalName>charger_gateway</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
