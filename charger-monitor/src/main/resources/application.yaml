@@ -31,7 +31,8 @@ management:
 # 日志
 logging:
   file:
-    name: logs/charger-monitor.log
+    name: charger-monitor.log
+    path: /home/lupc/apps/logs
   level:
     com.phynos.charger: DEBUG
     com:
