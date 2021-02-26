@@ -32,7 +32,7 @@ management:
 logging:
   file:
     name: charger_monitor.log
-    path: ./logs
+    path: './logs'
   level:
     com.phynos.charger: DEBUG
     com:
