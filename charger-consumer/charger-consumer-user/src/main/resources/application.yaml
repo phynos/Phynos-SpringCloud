@@ -2,6 +2,20 @@ server:
   port: 6901
   servlet:
     context-path: /api/user
+spring:
+  application:
+    name: charger-consumer-user
+  profiles:
+    active: dev
+  cloud:
+    config:
+      #uri: http://localhost:6300
+      # 从注册中心获取配置中心的服务
+      discovery:
+        enabled: true
+        service-id: charger-config
+      label: master
+      profile: dev
 
 # 在feign中开启熔断器
 feign:
