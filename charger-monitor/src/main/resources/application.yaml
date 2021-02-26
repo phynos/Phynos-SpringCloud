@@ -1,7 +1,7 @@
 
 spring:
   application:
-    name: charger-monitor
+    name: charger_monitor
   profiles:
     active: dev
   boot:
@@ -31,7 +31,7 @@ management:
 # 日志
 logging:
   file:
-    name: charger-monitor.log
+    name: charger_monitor.log
     path: /home/lupc/apps/logs
   level:
     com.phynos.charger: DEBUG
