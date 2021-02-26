@@ -48,7 +48,7 @@
     </dependencies>
 
     <build>
-        <finalName>charger-auth</finalName>
+        <finalName>charger_auth</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

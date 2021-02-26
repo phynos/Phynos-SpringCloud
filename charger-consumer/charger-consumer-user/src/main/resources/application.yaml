@@ -5,9 +5,8 @@ server:
 
 # 在feign中开启熔断器
 feign:
-  hystrix:
+  circuitbreaker:
     enabled: true
-
 
 # 配置集群eureka注册中心
 eureka:

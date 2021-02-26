@@ -1,6 +1,26 @@
 server:
   port: 6730
 
+spring:
+  application:
+    name: charger_auth
+  profiles:
+    # 必须在这里配置，不然无法从配置中心获取信息
+    active: dev
+  boot:
+    admin:
+      client:
+        url: http://localhost:6700/app-monitor
+  cloud:
+    config:
+      #uri: http://localhost:6300
+      # 从注册中心获取配置中心的服务
+      discovery:
+        enabled: true
+        service-id: charger-config
+      label: master
+      profile: prod
+
 # 配置集群eureka注册中心
 eureka:
   instance:
@@ -10,3 +30,35 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
+
+# 运行监控相关的配置
+management:
+  health:
+    diskspace:
+      enabled: true
+    db:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+# 日志
+logging:
+  file:
+    name: charger_auth.log
+    path: ./logs
+  level:
+    com.phynos.charger: DEBUG
+    com:
+      spring: trace
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%t]){faint} %clr(%-40.40logger{39}){cyan}[lineno:%line]    %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} ${LOG_LEVEL_PATTERN:-%5p} ${PID:- } --- [%t] %-40.40logger{39}[lineno:%line]: %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}"
+  logback:
+    rollingpolicy:
+      max-file-size: 300MB
+      max-history: 15
