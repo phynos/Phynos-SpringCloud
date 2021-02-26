@@ -32,8 +32,6 @@ management:
 logging:
   file:
     name: charger-consumer-user-${server.port}.log
-    max-size: 300MB #日志文件大小
-    max-history: 15
   level:
     com.phynos.charger: DEBUG
     com:
