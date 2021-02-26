@@ -1,26 +1,4 @@
 
-
-spring:
-  boot:
-    admin:
-      client:
-        url: http://localhost:6700/app-monitor
-
-# 运行监控相关的配置
-management:
-  health:
-    diskspace:
-      enabled: true
-    db:
-      enabled: true
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  endpoint:
-    health:
-      show-details: ALWAYS
-
 # 日志
 logging:
   file:
