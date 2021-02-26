@@ -9,12 +9,13 @@ spring:
     active: dev
   cloud:
     config:
-      uri: http://localhost:6300
+      #uri: http://localhost:6300
+      # 从注册中心获取配置中心的服务
+      discovery:
+        enabled: true
+        service-id: charger-config
       label: master
-      profile: prod
-  config:
-    activate:
-      on-profile: dev
+      profile: dev
 
 eureka:
   instance:
