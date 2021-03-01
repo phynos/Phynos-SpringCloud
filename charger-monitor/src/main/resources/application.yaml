@@ -31,8 +31,8 @@ management:
 # 日志
 logging:
   file:
-    name: charger_monitor.log
-    path: './logs'
+    name: logs/charger_monitor.log
+    path: ./
   level:
     com.phynos.charger: DEBUG
     com:

@@ -65,8 +65,8 @@ eureka:
 # 日志
 logging:
   file:
-    name: charger_gateway.log
-    path: ./logs
+    name: logs/charger_gateway.log
+    path: ./
   level:
     com.phynos.charger: DEBUG
     com:

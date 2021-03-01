@@ -49,8 +49,8 @@ management:
 # 日志
 logging:
   file:
-    name: charger_auth.log
-    path: ./logs
+    name: logs/charger_auth.log
+    path: ./
   level:
     com.phynos.charger: DEBUG
     com:
