@@ -1,0 +1,19 @@
+version: '3'
+services:
+  charger-mysql:
+    build:
+      context: ./db
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    restart: always
+    container_name: charger-mysql
+    image: phynos-mysql
+    ports:
+      - 3306:3306
+
+  charger-redis:
+    image: redis:6.0
+    ports:
+      - 6379:6379
+    restart: always
+    container_name: charger_redis

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  charger-redis:
+    image: redis:6.0
+    ports:
+      - 6379:6379
+    restart: always
+    container_name: charger_redis
+    command: redis-server /usr/local/etc/redis.conf --requirepass xxxxxx
+    volumes:
+      - /home/lupc/tink/redis/redis.conf:/usr/local/etc/redis/redis.conf
