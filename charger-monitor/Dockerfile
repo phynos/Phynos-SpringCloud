@@ -7,7 +7,7 @@ RUN mkdir -p /cloud
 # 指定工作目录
 WORKDIR /cloud
 # 声明暴露端口
-EXPOSE 6000
+EXPOSE 6700
 #复制到容器指定目录
 COPY ./target/charger_monitor.jar /cloud/charger_monitor.jar
 # 启动后执行命令

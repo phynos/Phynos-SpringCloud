@@ -3,74 +3,43 @@ services:
   charger-monitor:
     build:
       context: ./charger-monitor
+    image: charger_monitor
+    container_name: charger_monitor
     restart: always
     volumes:
-      - ./log:/cloud/logs
+      - /home/lupc/tink/charger:/cloud/logs
     ports:
-      - 6000:6000
-    container_name: charger_monitor
-    image: charger_monitor
+      - 6700:6700
 
   charger-eureka:
     build:
       context: ./charger-eureka
+    image: charger_eureka
+    container_name: charger_eureka
     restart: always
+    volumes:
+      - /home/lupc/tink/charger:/cloud/logs
     ports:
       - 8761:8761
-    container_name: charger_eureka
-    image: charger_eureka
 
   charger-config:
     build:
       context: ./charger-config
-    restart: always
-    ports:
-      - 6300:6300
-    container_name: charger_config
     image: charger_config
+    container_name: charger_config
+    restart: always
+    volumes:
+      - /home/lupc/tink/charger:/cloud/logs
+    ports:
+      - 6720:6720
 
   charger-gateway:
     build:
       context: ./charger-gateway
-    restart: always
-    ports:
-      - 6100:6100
-    container_name: charger_gateway
     image: charger_gateway
-
-  phynos-auth:
-    build:
-      context: ./charger-auth
+    container_name: charger_gateway
     restart: always
+    volumes:
+      - /home/lupc/tink/charger:/cloud/logs
     ports:
-      - 6400:6400
-    container_name: charger_auth
-    image: charger_auth
-
-  charger-product-sys:
-    build:
-      context: ./charger-product/charger-product-sys
-    restart: always
-    ports:
-      - 6801:6801
-    container_name: charger_product_sys
-    image: charger_product_sys
-
-  charger-product-user:
-    build:
-      context: ./charger-product/charger-product-user
-    restart: always
-    ports:
-      - 6802:6802
-    container_name: charger_product_user
-    image: charger_product_user
-
-  charger-consumer-user:
-    build:
-      context: ./charger-consumer/charger-consumer-user
-    restart: always
-    ports:
-      - 6901:6901
-    container_name: charger_consumer_user
-    image: charger_consumer_user
-
+      - 6710:6710
