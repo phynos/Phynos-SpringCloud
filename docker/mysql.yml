@@ -6,7 +6,7 @@ services:
     hostname: localhost
     network_mode: bridge
     environment:
-      MYSQL_ROOT_PASSWORD: xxxx
+      MYSQL_ROOT_PASSWORD: ${PASSWORD}
     restart: always
     ports:
       - 3306:3306

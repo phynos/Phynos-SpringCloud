@@ -1,19 +1,12 @@
 version: '3'
 services:
-  charger-mysql:
-    build:
-      context: ./db
+  charger-rabbitmq:
+    image: rabbitmq
+    container_name: charger-rabbitmq
     environment:
-      MYSQL_ROOT_PASSWORD: root
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: ${PASSWORD}
     restart: always
-    container_name: charger-mysql
-    image: phynos-mysql
     ports:
-      - 3306:3306
-
-  charger-redis:
-    image: redis:6.0
-    ports:
-      - 6379:6379
-    restart: always
-    container_name: charger_redis
+      - 5672:5672
+      - 15672:15672
