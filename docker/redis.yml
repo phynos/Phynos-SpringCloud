@@ -1,7 +1,7 @@
 version: '3'
 services:
   charger-redis:
-    image: redis:6.0
+    image: redis:lastest
     ports:
       - 6379:6379
     restart: always
