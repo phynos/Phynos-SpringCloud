@@ -9,6 +9,6 @@ WORKDIR /cloud
 # 声明暴露端口
 EXPOSE 8761
 #复制到容器指定目录
-COPY ./target/charger_eureka.jar /charger/charger_eureka.jar
+COPY ./target/charger_eureka.jar /cloud/charger_eureka.jar
 # 启动后执行命令
 ENTRYPOINT ["java","-jar","/charger/charger_eureka.jar"]
