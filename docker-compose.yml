@@ -10,6 +10,8 @@ services:
       - /home/lupc/tink/charger:/cloud/logs
     ports:
       - 6700:6700
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}
 
   charger-eureka:
     build:
@@ -21,6 +23,8 @@ services:
       - /home/lupc/tink/charger:/cloud/logs
     ports:
       - 8761:8761
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}
 
   charger-config:
     build:
@@ -34,6 +38,8 @@ services:
       - /home/lupc/tink/charger:/cloud/logs
     ports:
       - 6720:6720
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}
 
   charger-gateway:
     build:
