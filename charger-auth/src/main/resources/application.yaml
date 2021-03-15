@@ -17,15 +17,15 @@ spring:
       # 从注册中心获取配置中心的服务
       discovery:
         enabled: true
-        service-id: charger-config
+        service-id: charger_config
       label: master
       profile: prod
 
 # 配置集群eureka注册中心
 eureka:
   instance:
-    hostname: ${spring.cloud.client.ip-address}
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    hostname: ${CLOUD_HOST}
+    instance-id: ${CLOUD_HOST}:${server.port}
     prefer-ip-address: true
   client:
     service-url:

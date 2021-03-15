@@ -18,7 +18,7 @@ spring:
     config:
       discovery:
         enabled: true
-        service-id: charger-config
+        service-id: charger_config
     gateway:
       discovery:
         locator:
@@ -35,7 +35,7 @@ spring:
         - id: api-user
           predicates:
             - Path=/api/user/**
-          uri: lb://charger-consumer-user
+          uri: lb://charger_consumer_user
 
 # 运行监控相关的配置
 management:
@@ -55,8 +55,8 @@ management:
 # 配置集群eureka注册中心
 eureka:
   instance:
-    hostname: ${spring.cloud.client.ip-address}
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    hostname: ${CLOUD_HOST}
+    instance-id: ${CLOUD_HOST}:${server.port}
     prefer-ip-address: true
   client:
     service-url:

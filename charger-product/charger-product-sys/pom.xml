@@ -16,7 +16,7 @@
     </dependencies>
 
     <build>
-        <finalName>charger-product-sys</finalName>
+        <finalName>charger_product_sys</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

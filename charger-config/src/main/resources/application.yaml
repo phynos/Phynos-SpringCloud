@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: charger-config
+    name: charger_config
   profiles:
     active: native
   cloud:

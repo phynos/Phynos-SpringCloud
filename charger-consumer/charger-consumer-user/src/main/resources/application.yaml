@@ -1,10 +1,10 @@
 server:
-  port: 6901
+  port: 6901 # 6901~6909
   servlet:
     context-path: /api/user
 spring:
   application:
-    name: charger-consumer-user
+    name: charger_consumer_user
   profiles:
     active: dev
   cloud:
@@ -13,7 +13,7 @@ spring:
       # 从注册中心获取配置中心的服务
       discovery:
         enabled: true
-        service-id: charger-config
+        service-id: charger_config
       label: master
       profile: dev
 
@@ -25,9 +25,9 @@ feign:
 # 配置集群eureka注册中心
 eureka:
   instance:
-    hostname: ${spring.cloud.client.ip-address}
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    hostname: ${CLOUD_HOST}
+    instance-id: ${CLOUD_HOST}:${server.port}
     prefer-ip-address: true
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://${CLOUD_HOST}:8761/eureka/
