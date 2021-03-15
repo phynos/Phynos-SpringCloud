@@ -11,4 +11,4 @@ EXPOSE 8761
 #复制到容器指定目录
 COPY ./target/charger_eureka.jar /cloud/charger_eureka.jar
 # 启动后执行命令
-ENTRYPOINT ["java","-jar","/cloud/charger_eureka.jar"]
+CMD java -jar -Duser.timezone=GMT+08 -Dfile.encoding=UTF-8 /cloud/charger_eureka.jar

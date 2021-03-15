@@ -11,4 +11,4 @@ EXPOSE 6720
 #复制到容器指定目录
 COPY ./target/charger_config.jar /cloud/charger_config.jar
 # 启动后执行命令
-ENTRYPOINT ["java","-jar","/cloud/charger_config.jar"]
+CMD java -jar -Duser.timezone=GMT+08 -Dfile.encoding=UTF-8 /cloud/charger_config.jar
