@@ -10,7 +10,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:6700/app-monitor
+        url: http://${CLOUD_HOST}:6700/app-monitor
   cloud:
     config:
       #uri: http://localhost:6300
@@ -29,7 +29,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://${CLOUD_HOST}:8761/eureka/
 
 # 运行监控相关的配置
 management:
