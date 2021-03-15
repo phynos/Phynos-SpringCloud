@@ -1,5 +1,5 @@
 server:
-  port: 6901 # 6901~6909
+  port: ${APP_PORT} # 6901~6909
   servlet:
     context-path: /api/user
 spring:
