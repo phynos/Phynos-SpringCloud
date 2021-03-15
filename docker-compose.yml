@@ -27,6 +27,8 @@ services:
       context: ./charger-config
     image: charger_config
     container_name: charger_config
+    depends_on:
+      - charger-eureka
     restart: always
     volumes:
       - /home/lupc/tink/charger:/cloud/logs
@@ -38,8 +40,31 @@ services:
       context: ./charger-gateway
     image: charger_gateway
     container_name: charger_gateway
+    depends_on:
+      - charger-config
+      - charger-monitor
+      - charger-eureka
     restart: always
     volumes:
       - /home/lupc/tink/charger:/cloud/logs
     ports:
       - 6710:6710
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}
+
+  charger-auth:
+    build:
+      context: ./charger-auth
+    image: charger_auth
+    container_name: charger_auth
+    depends_on:
+      - charger-config
+      - charger-monitor
+      - charger-eureka
+    restart: always
+    volumes:
+      - /home/lupc/tink/charger:/cloud/logs
+    ports:
+      - 6730:6730
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}

@@ -13,7 +13,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:6700/app-monitor
+        url: http://${CLOUD_HOST}:6700/app-monitor
   cloud:
     config:
       discovery:
@@ -60,7 +60,7 @@ eureka:
     prefer-ip-address: true
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://${CLOUD_HOST}:8761/eureka/
 
 # 日志
 logging:

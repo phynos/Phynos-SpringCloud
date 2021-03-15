@@ -7,8 +7,8 @@ RUN mkdir -p /cloud
 # 指定工作目录
 WORKDIR /cloud
 # 声明暴露端口
-EXPOSE 6710
+EXPOSE 6730
 #复制到容器指定目录
-COPY ./target/charger_gateway.jar /cloud/charger_gateway.jar
+COPY ./target/charger_auth.jar /cloud/charger_auth.jar
 # 启动后执行命令
-CMD java -jar -Duser.timezone=GMT+08 -Dfile.encoding=UTF-8 /cloud/charger_gateway.jar
+CMD java -jar -Duser.timezone=GMT+08 -Dfile.encoding=UTF-8 /cloud/charger_auth.jar
