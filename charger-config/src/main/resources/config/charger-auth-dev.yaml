@@ -4,7 +4,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:6700/app-monitor
+        url: http://${CLOUD_HOST}:6700/app-monitor
 
 # 运行监控相关的配置
 management:

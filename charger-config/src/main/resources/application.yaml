@@ -15,8 +15,8 @@ spring:
 # 配置集群eureka注册中心
 eureka:
   instance:
-    hostname: ${spring.cloud.client.ip-address}
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    hostname: ${CLOUD_HOST}
+    instance-id: ${CLOUD_HOST}:${server.port}
     prefer-ip-address: true
   client:
     serviceUrl:

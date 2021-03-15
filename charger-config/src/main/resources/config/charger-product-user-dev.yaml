@@ -10,7 +10,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:6700/app-monitor
+        url: http://${CLOUD_HOST}:6700/app-monitor
   sleuth:
     sampler:
       #指定sleuth的采样率，默认0.1，设置为1表示日志全量传递到服务端
@@ -18,7 +18,7 @@ spring:
       probability: 0.1
   zipkin:
     #指定zipkin服务端连接地址，以http的方式提交到zipkin
-    base-url: http://127.0.0.1:9411
+    base-url: http://${CLOUD_HOST}:9411
 
 # 运行监控相关的配置
 management:
