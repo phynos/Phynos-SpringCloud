@@ -5,24 +5,3 @@ config:
     user:
       username: NaN
       password: prod-password
-
-spring:
-  boot:
-    admin:
-      client:
-        url: http://${CLOUD_HOST}:6700/app-monitor
-
-# 运行监控相关的配置
-management:
-  health:
-    diskspace:
-      enabled: true
-    db:
-      enabled: true
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  endpoint:
-    health:
-      show-details: ALWAYS

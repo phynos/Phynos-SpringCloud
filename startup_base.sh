@@ -1,4 +1,6 @@
 
+PKG_HOME=$(cd "$(dirname "$0")";pwd)
+
 source ./startup.sh
 
 dir='/home/lupc/apps'

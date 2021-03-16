@@ -5,13 +5,3 @@ config:
     user:
       username: NaN
       password: dev-password
-
-spring:
-  sleuth:
-    sampler:
-      #指定sleuth的采样率，默认0.1，设置为1表示日志全量传递到服务端
-      #开发测试环境建议设置为1.0
-      probability: 0.1
-  zipkin:
-    #指定zipkin服务端连接地址，以http的方式提交到zipkin
-    base-url: http://${CLOUD_HOST}:9411
