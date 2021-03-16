@@ -7,6 +7,10 @@ spring:
   profiles:
     # 必须在这里配置，不然无法从配置中心获取信息
     active: dev
+  boot:
+    admin:
+      client:
+        url: http://${CLOUD_HOST}:6700/app-monitor        
   cloud:
     config:
       #uri: http://localhost:6300
@@ -31,3 +35,30 @@ config:
     user:
       username: NaN
       password: NaN
+
+# 运行监控相关的配置
+management:
+  health:
+    diskspace:
+      enabled: true
+    db:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: ALWAYS
+
+# 日志
+logging:
+  file:
+    name: logs/charger-product-user-${server.port}.log
+  level:
+    com.phynos.charger: DEBUG
+    com:
+      spring: trace
+  pattern:
+    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%t]){faint} %clr(%-40.40logger{39}){cyan}[lineno:%line]    %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}"
+    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} ${LOG_LEVEL_PATTERN:-%5p} ${PID:- } --- [%t] %-40.40logger{39}[lineno:%line]: %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}"

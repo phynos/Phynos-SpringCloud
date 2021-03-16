@@ -7,10 +7,6 @@ config:
       password: dev-password
 
 spring:
-  boot:
-    admin:
-      client:
-        url: http://${CLOUD_HOST}:6700/app-monitor
   sleuth:
     sampler:
       #指定sleuth的采样率，默认0.1，设置为1表示日志全量传递到服务端
@@ -19,30 +15,3 @@ spring:
   zipkin:
     #指定zipkin服务端连接地址，以http的方式提交到zipkin
     base-url: http://${CLOUD_HOST}:9411
-
-# 运行监控相关的配置
-management:
-  health:
-    diskspace:
-      enabled: true
-    db:
-      enabled: true
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-  endpoint:
-    health:
-      show-details: ALWAYS
-
-# 日志
-logging:
-  file:
-    name: charger-product-user-${server.port}.log
-  level:
-    com.phynos.charger: DEBUG
-    com:
-      spring: trace
-  pattern:
-    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%t]){faint} %clr(%-40.40logger{39}){cyan}[lineno:%line]    %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}"
-    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} ${LOG_LEVEL_PATTERN:-%5p} ${PID:- } --- [%t] %-40.40logger{39}[lineno:%line]: %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}"

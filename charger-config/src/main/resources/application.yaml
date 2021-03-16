@@ -26,7 +26,6 @@ eureka:
 logging:
   file:
     name: logs/charger_config.log
-    path: ./
   level:
     com.phynos.charger: DEBUG
     com:

@@ -97,14 +97,14 @@ services:
     build:
       context: ./charger-product/charger-product-user
     image: charger_product_user
-    container_name: charger_product_user
+    container_name: charger_product_user_1
     depends_on:
       - charger-config
       - charger-monitor
       - charger-eureka
     restart: always
     volumes:
-      - /home/lupc/tink/charger:/cloud/logs
+      - /home/lupc/tink/charger/product_1:/cloud/logs
     ports:
       - 6811:6811
     environment:
@@ -112,17 +112,15 @@ services:
       APP_PORT: 6811
 
   charger-product-user-2:
-    build:
-      context: ./charger-product/charger-product-user
     image: charger_product_user
-    container_name: charger_product_user
+    container_name: charger_product_user_2
     depends_on:
       - charger-config
       - charger-monitor
       - charger-eureka
     restart: always
     volumes:
-      - /home/lupc/tink/charger:/cloud/logs
+      - /home/lupc/tink/charger/product_2:/cloud/logs
     ports:
       - 6812:6812
     environment:
@@ -133,14 +131,14 @@ services:
     build:
       context: ./charger-consumer/charger-consumer-user
     image: charger_consumer_user
-    container_name: charger_consumer_user
+    container_name: charger_consumer_user_1
     depends_on:
       - charger-config
       - charger-monitor
       - charger-eureka
     restart: always
     volumes:
-      - /home/lupc/tink/charger:/cloud/logs
+      - /home/lupc/tink/charger/consumer_1:/cloud/logs
     ports:
       - 6901:6901
     environment:
@@ -148,17 +146,15 @@ services:
       APP_PORT: 6901
 
   charger-consumer-user-2:
-    build:
-      context: ./charger-consumer/charger-consumer-user
     image: charger_consumer_user
-    container_name: charger_consumer_user
+    container_name: charger_consumer_user_2
     depends_on:
       - charger-config
       - charger-monitor
       - charger-eureka
     restart: always
     volumes:
-      - /home/lupc/tink/charger:/cloud/logs
+      - /home/lupc/tink/charger/consumer_2:/cloud/logs
     ports:
       - 6902:6902
     environment:
