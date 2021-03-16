@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: charger_product_user
+    name: charger-product-user
   profiles:
     # 必须在这里配置，不然无法从配置中心获取信息
     active: dev

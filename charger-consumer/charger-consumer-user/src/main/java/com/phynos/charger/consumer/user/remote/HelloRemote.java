@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @author by lupc
  * @date 2020-06-09 11:55
  */
-@FeignClient(name= "charger_product_user")
+@FeignClient(name= "charger-product-user")
 public interface HelloRemote {
 
     @RequestMapping(value = "/hello")
