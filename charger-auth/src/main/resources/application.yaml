@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: charger_auth
+    name: charger-auth
   profiles:
     # 必须在这里配置，不然无法从配置中心获取信息
     active: dev
@@ -17,7 +17,7 @@ spring:
       # 从注册中心获取配置中心的服务
       discovery:
         enabled: true
-        service-id: charger_config
+        service-id: charger-config
       label: master
       profile: prod
 

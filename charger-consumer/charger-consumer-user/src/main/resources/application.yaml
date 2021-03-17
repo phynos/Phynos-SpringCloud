@@ -4,7 +4,7 @@ server:
     context-path: /api/user
 spring:
   application:
-    name: charger_consumer_user
+    name: charger-consumer-user
   profiles:
     active: dev
   boot:
@@ -17,7 +17,7 @@ spring:
       # 从注册中心获取配置中心的服务
       discovery:
         enabled: true
-        service-id: charger_config
+        service-id: charger-config
       label: master
       profile: dev
   sleuth:

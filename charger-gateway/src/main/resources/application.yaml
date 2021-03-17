@@ -4,7 +4,7 @@ server:
 
 spring:
   application:
-    name: charger_gateway
+    name: charger-gateway
   profiles:
     # 必须在这里配置，不然无法从配置中心获取信息
     active: dev
@@ -18,11 +18,12 @@ spring:
     config:
       discovery:
         enabled: true
-        service-id: charger_config
+        service-id: charger-config
     gateway:
       discovery:
         locator:
           enabled: true # 是否和服务注册与发现组件结合，设置为 true 后可以直接使用应用名称调用服务
+          lower-case-service-id: true
       routes:
         - id: iot
           predicates:
@@ -35,7 +36,7 @@ spring:
         - id: api-user
           predicates:
             - Path=/api/user/**
-          uri: lb://charger_consumer_user
+          uri: lb://charger-consumer-user
 
 # 运行监控相关的配置
 management:
