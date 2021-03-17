@@ -11,6 +11,7 @@ import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
 import org.springframework.core.io.buffer.DataBuffer;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.server.reactive.ServerHttpRequest;
 import org.springframework.http.server.reactive.ServerHttpResponse;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
@@ -49,9 +50,12 @@ public class AuthFilter implements GlobalFilter, Ordered {
         if (valid) {
             logger.info("auth success,username={}", username);
             //验证通过后，将用户名写入
-            exchange.getRequest().getHeaders().add("username", username);
+            ServerHttpRequest host = exchange.getRequest().mutate()
+                    .header("username", username)
+                    .build();
+            ServerWebExchange build = exchange.mutate().request(host).build();
 
-            return chain.filter(exchange);
+            return chain.filter(build);
         } else {
             //返回鉴权失败
             return authError(response, "鉴权失败");
