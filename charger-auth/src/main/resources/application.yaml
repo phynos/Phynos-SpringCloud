@@ -50,7 +50,6 @@ management:
 logging:
   file:
     name: logs/charger_auth.log
-    path: ./
   level:
     com.phynos.charger: DEBUG
     com:

@@ -1,0 +1,54 @@
+version: '3.8'
+services:
+  postgresql:
+    image: postgres:latest
+    container_name: postgres
+    restart: always
+    privileged: true
+    environment:
+      POSTGRES_PASSWORD: ${PASSWORD}
+    ports:
+      - 5432:5432
+    volumes:
+      - /home/lupc/tink/postgresql/postgresql.conf:/etc/postgresql/postgresql.conf
+      - /home/lupc/tink/postgresql/log:/var/log/postgresql
+      - /home/lupc/tink/postgresql/data:/var/lib/postgresql/data
+  influxdb:
+    image: influxdb:2.0.4
+    container_name: influxdb
+    ports:
+      - 8086:8086
+    restart: always
+    volumes:
+      - /home/lupc/tink/influxdb2:/root/.influxdbv2
+  minio:
+    image: minio/minio:latest
+    container_name: minio
+    ports:
+      - 9000:9000
+    restart: always
+    command: server /data
+    environment:
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: ${PASSWORD} #大于等于8位，命令行传入
+    logging:
+      options:
+        max-size: "50M" # 最大文件上传限制
+        max-file: "10"
+      driver: json-file
+    volumes:
+      - /home/lupc/tink/minio/data:/data #数据文件
+      - /home/lupc/tink/minio/config:/root/.minio #配置文件
+  charger-mysql:
+    image: mysql:latest
+    container_name: charger-mysql
+    hostname: localhost
+    network_mode: bridge
+    environment:
+      MYSQL_ROOT_PASSWORD: ${PASSWORD}
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      # - /home/lupc/tink/mysql:/var/lib/mysql
+      - /home/lupc/tink/mysql/conf.d/my.cnf:/etc/mysql/conf.d/my.cnf
