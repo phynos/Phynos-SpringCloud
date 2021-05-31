@@ -1,0 +1,27 @@
+version: '3'
+services:
+  charger-gateway:
+    build:
+      context: ./charger-gateway
+    image: charger_gateway
+    container_name: charger_gateway
+    restart: always
+    volumes:
+      - /home/lupc/tink/charger:/cloud/logs
+    ports:
+      - 6710:6710
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}
+
+  charger-auth:
+    build:
+      context: ./charger-auth
+    image: charger_auth
+    container_name: charger_auth
+    restart: always
+    volumes:
+      - /home/lupc/tink/charger:/cloud/logs
+    ports:
+      - 6730:6730
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}

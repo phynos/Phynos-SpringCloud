@@ -2,7 +2,7 @@ version: '3.3'
 services:
   postgresql:
     image: postgres:latest
-    container_name: postgres
+    container_name: charger-postgres
     restart: always
     privileged: true
     environment:
@@ -15,7 +15,7 @@ services:
       - /home/lupc/tink/postgresql/data:/var/lib/postgresql/data
   influxdb:
     image: influxdb:2.0.4
-    container_name: influxdb
+    container_name: charger-influxdb
     ports:
       - 8086:8086
     restart: always
@@ -23,7 +23,7 @@ services:
       - /home/lupc/tink/influxdb2:/root/.influxdbv2
   minio:
     image: minio/minio:latest
-    container_name: minio
+    container_name: charger-minio
     ports:
       - 9000:9000
     restart: always

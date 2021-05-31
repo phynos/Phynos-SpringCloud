@@ -1,0 +1,14 @@
+version: '3'
+services:
+  charger-config:
+    build:
+      context: ./charger-config
+    image: charger_config
+    container_name: charger_config
+    restart: always
+    volumes:
+      - /home/lupc/tink/charger:/cloud/logs
+    ports:
+      - 6720:6720
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}

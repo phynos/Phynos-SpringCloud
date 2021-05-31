@@ -1,0 +1,41 @@
+version: '3'
+services:
+  charger-product-sys:
+    build:
+      context: ./charger-product/charger-product-sys
+    image: charger_product_sys
+    container_name: charger_product_sys
+    restart: always
+    volumes:
+      - /home/lupc/tink/charger:/cloud/logs
+    ports:
+      - 6801:6801
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}
+      APP_PORT: 6801
+
+  charger-product-user-1:
+    build:
+      context: ./charger-product/charger-product-user
+    image: charger_product_user
+    container_name: charger_product_user_1
+    restart: always
+    volumes:
+      - /home/lupc/tink/charger/product_1:/cloud/logs
+    ports:
+      - 6811:6811
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}
+      APP_PORT: 6811
+
+  charger-product-user-2:
+    image: charger_product_user
+    container_name: charger_product_user_2
+    restart: always
+    volumes:
+      - /home/lupc/tink/charger/product_2:/cloud/logs
+    ports:
+      - 6812:6812
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}
+      APP_PORT: 6812

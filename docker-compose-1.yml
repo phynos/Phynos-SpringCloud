@@ -1,0 +1,27 @@
+version: '3'
+services:
+  charger-monitor:
+    build:
+      context: ./charger-monitor
+    image: charger_monitor
+    container_name: charger_monitor
+    restart: always
+    volumes:
+      - /home/lupc/tink/charger:/cloud/logs
+    ports:
+      - 6700:6700
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}
+
+  charger-eureka:
+    build:
+      context: ./charger-eureka
+    image: charger_eureka
+    container_name: charger_eureka
+    restart: always
+    volumes:
+      - /home/lupc/tink/charger:/cloud/logs
+    ports:
+      - 8761:8761
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}

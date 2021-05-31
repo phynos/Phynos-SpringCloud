@@ -1,0 +1,27 @@
+version: '3'
+services:
+  charger-consumer-user-1:
+    build:
+      context: ./charger-consumer/charger-consumer-user
+    image: charger_consumer_user
+    container_name: charger_consumer_user_1
+    restart: always
+    volumes:
+      - /home/lupc/tink/charger/consumer_1:/cloud/logs
+    ports:
+      - 6901:6901
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}
+      APP_PORT: 6901
+
+  charger-consumer-user-2:
+    image: charger_consumer_user
+    container_name: charger_consumer_user_2
+    restart: always
+    volumes:
+      - /home/lupc/tink/charger/consumer_2:/cloud/logs
+    ports:
+      - 6902:6902
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}
+      APP_PORT: 6902
