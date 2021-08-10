@@ -1,6 +1,7 @@
 package com.phynos.charger.gateway.filter;
 
-import com.phynos.charger.common.jwt.JwtTokenUtil;
+import com.auth0.jwt.interfaces.DecodedJWT;
+import com.phynos.charger.common.jwt.util.Auth0JwtUtil;
 import com.phynos.charger.common.utils.JsonResult;
 import com.phynos.charger.common.utils.JsonUtil;
 import org.apache.commons.lang.StringUtils;
@@ -42,10 +43,20 @@ public class AuthFilter implements GlobalFilter, Ordered {
             return chain.filter(exchange);
         }
 
-        String token = exchange.getRequest().getHeaders().getFirst("Authorization");
+        String requestTokenHeader = exchange.getRequest().getHeaders().getFirst("Authorization");
         ServerHttpResponse response = exchange.getResponse();
 
-        String username = new JwtTokenUtil().getUsernameFromToken(token);
+        String jwtToken = null;
+        if (requestTokenHeader != null && requestTokenHeader.startsWith("Bearer ")) {
+            jwtToken = requestTokenHeader.substring(7);
+        } else {
+            logger.warn("JWT Token does not begin with Bearer String");
+        }
+        DecodedJWT jwt = Auth0JwtUtil.verify("", jwtToken);
+        if (jwt == null) {
+            return authError(response, "鉴权失败");
+        }
+        String username = jwt.getClaim("username").asString();
         boolean valid = StringUtils.isNotEmpty(username);
         if (valid) {
             logger.info("auth success,username={}", username);

@@ -1,3 +1,6 @@
+jwt:
+  secret: dafasfasdf55adf
+  expires: 7
 
 server:
   port: 6710
