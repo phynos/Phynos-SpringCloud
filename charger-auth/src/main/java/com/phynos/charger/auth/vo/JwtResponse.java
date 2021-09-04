@@ -1,4 +1,4 @@
-package com.phynos.charger.auth.pojo;
+package com.phynos.charger.auth.vo;
 
 import java.io.Serializable;
 
