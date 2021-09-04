@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  influxdb:
+    image: influxdb:2.0.8
+    container_name: charger-influxdb
+    ports:
+      - 8086:8086
+    restart: always
+    volumes:
+      - /home/lupc/tink/influxdb2:/root/.influxdbv2  

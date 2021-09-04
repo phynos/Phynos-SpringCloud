@@ -1,0 +1,28 @@
+version: '3.3'
+services:  
+  mysql-1:
+    image: mysql:latest
+    container_name: mysql-1
+    hostname: localhost
+    network_mode: bridge
+    environment:
+      MYSQL_ROOT_PASSWORD: ${PASSWORD}
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - /home/lupc/tink/mysql1/data:/var/lib/mysql
+      - /home/lupc/tink/mysql1/conf.d/my.cnf:/etc/mysql/conf.d/my.cnf
+  mysql-2:
+    image: mysql:latest
+    container_name: mysql-2
+    hostname: localhost
+    network_mode: bridge
+    environment:
+      MYSQL_ROOT_PASSWORD: ${PASSWORD}
+    restart: always
+    ports:
+      - 13306:3306
+    volumes:
+      - /home/lupc/tink/mysql2/data:/var/lib/mysql
+      - /home/lupc/tink/mysql2/conf.d/my.cnf:/etc/mysql/conf.d/my.cnf
