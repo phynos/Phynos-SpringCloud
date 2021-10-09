@@ -1,0 +1,15 @@
+version: '3.3'
+services:
+  postgresql:
+    image: postgres:latest
+    container_name: charger-postgres
+    restart: always
+    privileged: true
+    environment:
+      POSTGRES_PASSWORD: ${PASSWORD}
+    ports:
+      - 5432:5432
+    volumes:
+      - /home/lupc/tink/postgresql/postgresql.conf:/etc/postgresql/postgresql.conf
+      - /home/lupc/tink/postgresql/log:/var/log/postgresql
+      - /home/lupc/tink/postgresql/data:/var/lib/postgresql/data
