@@ -16,7 +16,7 @@
         <spring-boot.version>2.4.2</spring-boot.version>
         <spring-cloud.version>2020.0.3</spring-cloud.version>
         <zipkin.version>2.12.9</zipkin.version>
-        <sap.version>2.4.0</sap.version>
+        <sap.version>2.4.2</sap.version>
     </properties>
 
     <modules>

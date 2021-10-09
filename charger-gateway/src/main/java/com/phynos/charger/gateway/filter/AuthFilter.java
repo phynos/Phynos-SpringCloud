@@ -4,9 +4,8 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 import com.phynos.charger.common.jwt.util.Auth0JwtUtil;
 import com.phynos.charger.common.utils.JsonResult;
 import com.phynos.charger.common.utils.JsonUtil;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
@@ -28,14 +27,13 @@ import java.nio.charset.StandardCharsets;
  * @author by lupc
  * @date 2020-09-17 17:57
  */
+@Slf4j
 @Component
 public class AuthFilter implements GlobalFilter, Ordered {
 
-    Logger logger = LoggerFactory.getLogger(getClass());
-
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        logger.debug("进入全局过滤器");
+        log.debug("进入全局过滤器");
 
         String uri = exchange.getRequest().getURI().getPath();
 
@@ -50,7 +48,7 @@ public class AuthFilter implements GlobalFilter, Ordered {
         if (requestTokenHeader != null && requestTokenHeader.startsWith("Bearer ")) {
             jwtToken = requestTokenHeader.substring(7);
         } else {
-            logger.warn("JWT Token does not begin with Bearer String");
+            log.warn("JWT Token does not begin with Bearer String");
         }
         DecodedJWT jwt = Auth0JwtUtil.verify("", jwtToken);
         if (jwt == null) {
@@ -59,7 +57,7 @@ public class AuthFilter implements GlobalFilter, Ordered {
         String username = jwt.getClaim("username").asString();
         boolean valid = StringUtils.isNotEmpty(username);
         if (valid) {
-            logger.info("auth success,username={}", username);
+            log.info("auth success,username={}", username);
             //验证通过后，将用户名写入
             ServerHttpRequest host = exchange.getRequest().mutate()
                     .header("username", username)
