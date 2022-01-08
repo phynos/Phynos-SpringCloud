@@ -3,7 +3,7 @@ services:
   charger-monitor:
     build:
       context: ./charger-monitor
-    image: charger_monitor
+    image: charger/monitor
     container_name: charger_monitor
     restart: always
     volumes:
@@ -16,7 +16,7 @@ services:
   charger-eureka:
     build:
       context: ./charger-eureka
-    image: charger_eureka
+    image: charger/eureka
     container_name: charger_eureka
     restart: always
     volumes:
@@ -29,7 +29,7 @@ services:
   charger-config:
     build:
       context: ./charger-config
-    image: charger_config
+    image: charger/config
     container_name: charger_config
     depends_on:
       - charger-eureka
@@ -44,7 +44,7 @@ services:
   charger-gateway:
     build:
       context: ./charger-gateway
-    image: charger_gateway
+    image: charger/gateway
     container_name: charger_gateway
     depends_on:
       - charger-config
@@ -61,7 +61,7 @@ services:
   charger-auth:
     build:
       context: ./charger-auth
-    image: charger_auth
+    image: charger/auth
     container_name: charger_auth
     depends_on:
       - charger-config
