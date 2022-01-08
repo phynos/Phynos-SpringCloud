@@ -8,6 +8,7 @@ spring:
     admin:
       ui:
         title: '微服务后台监控'
+        public-url: http://iotroll.com:16700
   security:
     user:
       name: admin
