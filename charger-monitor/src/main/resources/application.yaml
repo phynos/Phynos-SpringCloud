@@ -3,7 +3,7 @@ spring:
   application:
     name: charger_monitor
   profiles:
-    active: dev
+    active: prod
   boot:
     admin:
       ui:
