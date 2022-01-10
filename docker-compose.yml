@@ -5,11 +5,14 @@ services:
       context: ./charger-monitor
     image: charger/monitor
     container_name: charger_monitor
+    logging:
+      options:
+        max-size: "50m"
     restart: always
     volumes:
       - /home/lupc/tink/charger:/cloud/logs
     ports:
-      - 6700:6700
+      - "6700:6700"
     environment:
       CLOUD_HOST: ${CLOUD_HOST}
 
@@ -18,11 +21,14 @@ services:
       context: ./charger-eureka
     image: charger/eureka
     container_name: charger_eureka
+    logging:
+      options:
+        max-size: "50m"
     restart: always
     volumes:
       - /home/lupc/tink/charger:/cloud/logs
     ports:
-      - 8761:8761
+      - "8761:8761"
     environment:
       CLOUD_HOST: ${CLOUD_HOST}
 
@@ -31,13 +37,16 @@ services:
       context: ./charger-config
     image: charger/config
     container_name: charger_config
+    logging:
+      options:
+        max-size: "50m"
     depends_on:
       - charger-eureka
     restart: always
     volumes:
       - /home/lupc/tink/charger:/cloud/logs
     ports:
-      - 6720:6720
+      - "6720:6720"
     environment:
       CLOUD_HOST: ${CLOUD_HOST}
 
@@ -46,6 +55,13 @@ services:
       context: ./charger-gateway
     image: charger/gateway
     container_name: charger_gateway
+    deploy:
+      resources:
+        limits:
+          cpus: 4 #限制CPU最多6核心
+    logging:
+      options:
+        max-size: "50m"
     depends_on:
       - charger-config
       - charger-monitor
@@ -54,7 +70,7 @@ services:
     volumes:
       - /home/lupc/tink/charger:/cloud/logs
     ports:
-      - 6710:6710
+      - "6710:6710"
     environment:
       CLOUD_HOST: ${CLOUD_HOST}
 
@@ -63,6 +79,9 @@ services:
       context: ./charger-auth
     image: charger/auth
     container_name: charger_auth
+    logging:
+      options:
+        max-size: "50m"
     depends_on:
       - charger-config
       - charger-monitor
@@ -71,6 +90,26 @@ services:
     volumes:
       - /home/lupc/tink/charger:/cloud/logs
     ports:
-      - 6730:6730
+      - "6730:6730"
+    environment:
+      CLOUD_HOST: ${CLOUD_HOST}
+
+  charger-proxy:
+    image: nginx:latest
+    container_name: charger_proxy
+    logging:
+      options:
+        max-size: "50m"
+    depends_on:
+      - charger-auth
+      - charger-gateway
+    restart: always
+    volumes:
+      - /home/lupc/tink/charger/nginx/conf.d:/etc/nginx/conf.d
+      - /home/lupc/tink/charger/nginx/log:/var/log/nginx
+      - /home/lupc/tink/charger/nginx/html:/var/nginx/html
+      - /etc/localtime:/etc/localtime
+    ports:
+      - "6701:80"
     environment:
       CLOUD_HOST: ${CLOUD_HOST}
