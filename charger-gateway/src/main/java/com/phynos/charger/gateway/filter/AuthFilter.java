@@ -1,11 +1,12 @@
 package com.phynos.charger.gateway.filter;
 
-import com.phynos.charger.common.jwt.JwtTokenUtil;
-import com.phynos.charger.common.utils.JsonResult;
+import com.auth0.jwt.interfaces.DecodedJWT;
+import com.phynos.charger.common.jwt.Auth0JwtUtil;
 import com.phynos.charger.common.utils.JsonUtil;
+import com.phynos.charger.common.utils.R;
+import com.phynos.charger.common.utils.ResultCodeEnum;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
 import org.springframework.core.Ordered;
@@ -26,28 +27,32 @@ import java.nio.charset.StandardCharsets;
  * @author by lupc
  * @date 2020-09-17 17:57
  */
+@Slf4j
 @Component
 public class AuthFilter implements GlobalFilter, Ordered {
 
-    Logger logger = LoggerFactory.getLogger(getClass());
+    String tokenHead = "Bearer ";
+    String tokenHeader = "Authorization";
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        logger.debug("进入全局过滤器");
+        log.debug("进入全局过滤器");
 
         String uri = exchange.getRequest().getURI().getPath();
 
-        if (uri.startsWith("/authenticate")) {
+        if (uri.startsWith("/auth")) {
             return chain.filter(exchange);
         }
 
-        String token = exchange.getRequest().getHeaders().getFirst("Authorization");
+        String authHeader = exchange.getRequest().getHeaders().getFirst(tokenHeader);
         ServerHttpResponse response = exchange.getResponse();
 
-        String username = new JwtTokenUtil().getUsernameFromToken(token);
+        final String authToken = authHeader.substring(tokenHead.length()); // The part after "Bearer "
+        DecodedJWT decodedJWT = Auth0JwtUtil.decodeToken(authToken);
+        String username = decodedJWT.getClaim("username").asString();
         boolean valid = StringUtils.isNotEmpty(username);
         if (valid) {
-            logger.info("auth success,username={}", username);
+            log.info("auth success,username={}", username);
             //验证通过后，将用户名写入
             exchange.getRequest().getHeaders().add("username", username);
 
@@ -61,7 +66,7 @@ public class AuthFilter implements GlobalFilter, Ordered {
     private Mono<Void> authError(ServerHttpResponse response, String msg) {
         response.setStatusCode(HttpStatus.UNAUTHORIZED);
         response.getHeaders().add("ContentType", "application/json;charset=UTF-8");
-        JsonResult result = JsonResult.code(HttpStatus.UNAUTHORIZED.value(), msg);
+        R<?> result = R.error(ResultCodeEnum.UNAUTHORIZED, msg);
         String resultStr = JsonUtil.objectToString(result);
         DataBuffer buffer = response.bufferFactory().wrap(resultStr.getBytes(StandardCharsets.UTF_8));
         return response.writeWith(Flux.just(buffer));

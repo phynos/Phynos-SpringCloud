@@ -24,6 +24,10 @@ spring:
         locator:
           enabled: true # 是否和服务注册与发现组件结合，设置为 true 后可以直接使用应用名称调用服务
       routes:
+        - id: api-auth
+            predicates:
+              - Path=/auth/**
+            uri: lb://charger-auth
         - id: iot
           predicates:
             - Path=/test/**
@@ -64,17 +68,4 @@ eureka:
 
 # 日志
 logging:
-  file:
-    name: logs/charger_gateway.log
-    path: ./
-  level:
-    com.phynos.charger: DEBUG
-    com:
-      spring: trace
-  pattern:
-    console: "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%t]){faint} %clr(%-40.40logger{39}){cyan}[lineno:%line]    %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}"
-    file: "%d{yyyy-MM-dd HH:mm:ss.SSS} ${LOG_LEVEL_PATTERN:-%5p} ${PID:- } --- [%t] %-40.40logger{39}[lineno:%line]: %m%n${LOG_EXCEPTION_CONVERSION_WORD:%wEx}"
-  logback:
-    rollingpolicy:
-      max-file-size: 300MB
-      max-history: 15
+  config: classpath:logback-spring.xml

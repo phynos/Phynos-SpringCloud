@@ -9,8 +9,8 @@ public enum ResultCodeEnum {
 	OPERATION_FAILED(10003,"操作失败"),
 	OBJECT_UN_EXIST(10004,"数据不存在"),
 	NOT_HAVE_PERMISSION(10005,"没有权限"),
-	
-	LOGIN_FIRST(20001,"请登录后再访问"),
+
+	UNAUTHORIZED(20001,"请登录后再访问"),
 	USERNAME_PASSWORD_MISMATCH(20002,"用户名或密码错误"),
 	USER_DISABLED(20003,"用户被禁用"),
 	VALID_CODE_ERROR(20004,"验证码错误"),

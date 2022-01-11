@@ -94,9 +94,9 @@ services:
     environment:
       CLOUD_HOST: ${CLOUD_HOST}
 
-  charger-proxy:
+  charger-nginx:
     image: nginx:latest
-    container_name: charger_proxy
+    container_name: charger_nginx
     logging:
       options:
         max-size: "50m"

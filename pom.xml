@@ -17,6 +17,10 @@
         <spring-cloud.version>2020.0.0</spring-cloud.version>
         <zipkin.version>2.12.9</zipkin.version>
         <sap.version>2.4.0</sap.version>
+        <common.lang3.version>3.9</common.lang3.version>
+        <common.io.version>2.11.0</common.io.version>
+        <guava.version>31.0.1-jre</guava.version>
+        <kaptcha.version>2.3.2</kaptcha.version>
     </properties>
 
     <modules>
@@ -58,12 +62,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
-            <dependency>
-                <groupId>io.zipkin.java</groupId>
-                <artifactId>zipkin</artifactId>
-                <version>${zipkin.version}</version>
-            </dependency>
+            
             <dependency>
                 <groupId>io.zipkin.java</groupId>
                 <artifactId>zipkin-server</artifactId>
@@ -83,6 +82,13 @@
                 <groupId>de.codecentric</groupId>
                 <artifactId>spring-boot-admin-starter-client</artifactId>
                 <version>${sap.version}</version>
+            </dependency>
+
+            <!-- 验证码 -->
+            <dependency>
+                <groupId>com.github.penggle</groupId>
+                <artifactId>kaptcha</artifactId>
+                <version>${kaptcha.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
