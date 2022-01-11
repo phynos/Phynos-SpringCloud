@@ -20,6 +20,10 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
         <dependency>
@@ -48,6 +52,10 @@
         <dependency>
             <groupId>com.phynos.charger</groupId>
             <artifactId>charger-common-jwt</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.phynos.charger</groupId>
+            <artifactId>charger-common-utils</artifactId>
         </dependency>
         <!-- 验证码 -->
         <dependency>
