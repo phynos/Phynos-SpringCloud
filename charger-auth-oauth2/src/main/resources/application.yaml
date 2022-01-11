@@ -1,6 +1,0 @@
-server:
-  port: 6740
-
-spring:
-  application:
-    name: charger-oauth2

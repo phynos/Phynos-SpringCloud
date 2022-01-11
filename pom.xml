@@ -28,7 +28,6 @@
         <module>charger-dependencies</module>
         <module>charger-common</module>
         <module>charger-auth</module>
-        <module>charger-auth-oauth2</module>
         <module>charger-config</module>
         <module>charger-eureka</module>
         <module>charger-gateway</module>
@@ -62,7 +61,7 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-            
+
             <dependency>
                 <groupId>io.zipkin.java</groupId>
                 <artifactId>zipkin-server</artifactId>
