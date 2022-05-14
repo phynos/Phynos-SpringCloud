@@ -13,8 +13,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <spring-boot.version>2.4.2</spring-boot.version>
-        <spring-cloud.version>2020.0.0</spring-cloud.version>
+        <spring-boot.version>2.6.2</spring-boot.version>
+        <spring-cloud.version>2021.0.2</spring-cloud.version>
         <zipkin.version>2.12.9</zipkin.version>
         <sap.version>2.4.0</sap.version>
         <common.lang3.version>3.9</common.lang3.version>
